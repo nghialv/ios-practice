@@ -7,6 +7,21 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TestObject.h"
+
+//enum MyType : NSInteger{
+//    MyTypeOne,
+//    MyTypeTwo
+//};
+
+typedef NS_ENUM(NSUInteger, MyEnum){ABC, JKL, XYZ};
+
+typedef NS_OPTIONS(NSUInteger, MyOptions){
+    kFaster = (1 << 3),
+    kBetter = (1 << 4),
+    kAwesome = (1 << 5)
+};
+
 
 @interface objc_testTests : XCTestCase
 
@@ -27,10 +42,28 @@
     
     [super tearDown];
 }
+    
+    
 
-- (void)testExample
+
+    
+    
+- (void)testObjC
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+
+    
+    
+    
+    TestObject* obj = [[TestObject alloc] initWithName:@"denny"];
+
+    
+    if(__has_feature(objc_instancetype)) NSLog(@"using objc instancetype");
+    
+    id myInt = @(12);
+    id myStr = @"dennycd";
+    id myArr = @[myInt, myStr];
+//    id myDict = { @"first" ,  myInt, @"second" : myStr };
+    
 }
 
 @end

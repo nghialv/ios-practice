@@ -21,6 +21,8 @@
 		3E80E6F417822058000242ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D617822058000242ED /* UIKit.framework */; };
 		3E80E6FC17822058000242ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E80E6FA17822058000242ED /* InfoPlist.strings */; };
 		3E80E6FE17822058000242ED /* objc_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6FD17822058000242ED /* objc_testTests.m */; };
+		3E80E70A17822D9E000242ED /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E70917822CA5000242ED /* TestObject.m */; };
+		3E80E70B17822DF9000242ED /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E70917822CA5000242ED /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		3E80E6FB17822058000242ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E80E6FD17822058000242ED /* objc_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_testTests.m; sourceTree = "<group>"; };
 		3E80E70717822068000242ED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3E80E70817822CA5000242ED /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		3E80E70917822CA5000242ED /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				3E80E6E817822058000242ED /* ViewController.m */,
 				3E80E6EA17822058000242ED /* Images.xcassets */,
 				3E80E6D917822058000242ED /* Supporting Files */,
+				3E80E70817822CA5000242ED /* TestObject.h */,
+				3E80E70917822CA5000242ED /* TestObject.m */,
 			);
 			path = "objc-test";
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E80E70B17822DF9000242ED /* TestObject.m in Sources */,
 				3E80E6E917822058000242ED /* ViewController.m in Sources */,
 				3E80E6E317822058000242ED /* AppDelegate.m in Sources */,
 				3E80E6DF17822058000242ED /* main.m in Sources */,
@@ -261,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E80E70A17822D9E000242ED /* TestObject.m in Sources */,
 				3E80E6FE17822058000242ED /* objc_testTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +345,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				WARNING_CFLAGS = (
+					"-Warc-retain-cycles",
+					"-Wreceiver-is-weak",
+				);
 			};
 			name = Debug;
 		};
@@ -368,6 +380,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Warc-retain-cycles",
+					"-Wreceiver-is-weak",
+				);
 			};
 			name = Release;
 		};
@@ -412,6 +428,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = "objc-testTests/objc-testTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -430,6 +447,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "objc-test/objc-test-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/**";
 				INFOPLIST_FILE = "objc-testTests/objc-testTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
