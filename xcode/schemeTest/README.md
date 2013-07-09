@@ -9,6 +9,23 @@ based from WWDC 2012 session #408
 * find derived data directory from Preference => Location 
 * File ==> Workspace Setting to set per workspace/project derived data location
 * File ==> Workspace Setting => Advanced 
-
-
 * xcrun nm -a  /Path-to-Build-Project
+
+* xcodebuild -showBuildSettings -project /Path-to-Project-File
+* opt-click on Product Menu, select Clean Build Folder
+
+
+
+### share schemes
+
+MyApp.xcodeproj/ 
+    * xcuserdata
+        * denny.xcuserdata/
+        * someoneealse.xcuserdata/
+            * xcschemes   (Per User Schemes)
+                * MyApp.xcscheme
+                * xcschememanagement.plist
+    * xcsharedata
+        * xcschemes/  
+            * MyApp.xcscheme
+            * MyFramework.xcscheme
