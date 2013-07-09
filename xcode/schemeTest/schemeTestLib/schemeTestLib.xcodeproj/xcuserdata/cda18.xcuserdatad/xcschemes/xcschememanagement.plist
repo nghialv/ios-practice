@@ -4,22 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>schemeTestOSX.xcscheme_^#shared#^_</key>
+		<key>schemeTestLib.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<true/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3E648F18178C768B00A74440</key>
+		<key>3E648F58178C80A600A74440</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E648F39178C768B00A74440</key>
+		<key>3E648F68178C80A700A74440</key>
 		<dict>
 			<key>primary</key>
 			<true/>

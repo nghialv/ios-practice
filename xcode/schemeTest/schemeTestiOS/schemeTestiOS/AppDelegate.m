@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "schemeTestLib/schemeTestLib.h"
+
 
 @implementation AppDelegate
 

@@ -4,6 +4,13 @@
    <FileRef
       location = "group:README.md">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Library">
+      <FileRef
+         location = "group:schemeTestLib/schemeTestLib.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:schemeTestiOS/schemeTestiOS.xcodeproj">
    </FileRef>

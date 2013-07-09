@@ -29,3 +29,7 @@ MyApp.xcodeproj/
         * xcschemes/  
             * MyApp.xcscheme
             * MyFramework.xcscheme
+
+### Use static library
+
+* add __-ObjC__ to Other Linker Flag in app project to ensure the app project link against all avaialble objective c object files in a static library !!
