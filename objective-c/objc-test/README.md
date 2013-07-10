@@ -8,8 +8,14 @@
 * WWDC 2012 # 406 - Adopting Automatic Reference Counting
 * WWDC 2012 # 413 - Migrating to Modern Objective-C
 
+## Accessor
+* always use accessor method , except
+    * initialization method
+    * dealloc 
+* always declare ivars in private class extenstion in the implementation file
 
-
+* Apple reserves __Accessor Name__ starting with `_`
+* use `_` prefix for instance variables is encouraged
 
 ### ARC Basic
 * Think about ownership
@@ -113,7 +119,6 @@ Others
     * enables return type inference 
 
 
-### Last Update:  July 2013
 
 
 
