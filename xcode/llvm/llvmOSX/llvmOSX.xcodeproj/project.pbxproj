@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E3E31E8178E2066004094DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3E31E7178E2066004094DA /* XCTest.framework */; };
+		3E3E31EE178E2066004094DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E3E31EC178E2066004094DA /* InfoPlist.strings */; };
+		3E3E31F0178E2066004094DA /* llvmOSX_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E31EF178E2066004094DA /* llvmOSX_Tests.m */; };
 		3E444529178E1DB2008EE2EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E444528178E1DB1008EE2EB /* Foundation.framework */; };
 		3E44452C178E1DB2008EE2EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E44452B178E1DB2008EE2EB /* main.m */; };
 		3E444530178E1DB2008EE2EB /* llvmOSX.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3E44452F178E1DB2008EE2EB /* llvmOSX.1 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E3E31F2178E2066004094DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E44451D178E1DB1008EE2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E444524178E1DB1008EE2EB;
+			remoteInfo = llvmOSX;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3E444523178E1DB1008EE2EB /* CopyFiles */ = {
@@ -26,15 +39,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E3E31E6178E2066004094DA /* llvmOSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = "llvmOSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3E31E7178E2066004094DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3E3E31EB178E2066004094DA /* llvmOSX Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "llvmOSX Tests-Info.plist"; sourceTree = "<group>"; };
+		3E3E31ED178E2066004094DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3E3E31EF178E2066004094DA /* llvmOSX_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = llvmOSX_Tests.m; sourceTree = "<group>"; };
+		3E3E31F1178E2066004094DA /* llvmOSX Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llvmOSX Tests-Prefix.pch"; sourceTree = "<group>"; };
 		3E444525178E1DB1008EE2EB /* llvmOSX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = llvmOSX; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E444528178E1DB1008EE2EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E44452B178E1DB2008EE2EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E44452E178E1DB2008EE2EB /* llvmOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llvmOSX-Prefix.pch"; sourceTree = "<group>"; };
 		3E44452F178E1DB2008EE2EB /* llvmOSX.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = llvmOSX.1; sourceTree = "<group>"; };
-		3E444537178E1DE9008EE2EB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3E3E31E3178E2066004094DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3E31E8178E2066004094DA /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E444522178E1DB1008EE2EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,11 +72,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E3E31E9178E2066004094DA /* llvmOSX Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3E3E31EF178E2066004094DA /* llvmOSX_Tests.m */,
+				3E3E31EA178E2066004094DA /* Supporting Files */,
+			);
+			path = "llvmOSX Tests";
+			sourceTree = "<group>";
+		};
+		3E3E31EA178E2066004094DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E3E31EB178E2066004094DA /* llvmOSX Tests-Info.plist */,
+				3E3E31EC178E2066004094DA /* InfoPlist.strings */,
+				3E3E31F1178E2066004094DA /* llvmOSX Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		3E44451C178E1DB1008EE2EB = {
 			isa = PBXGroup;
 			children = (
-				3E444537178E1DE9008EE2EB /* README.md */,
 				3E44452A178E1DB2008EE2EB /* llvmOSX */,
+				3E3E31E9178E2066004094DA /* llvmOSX Tests */,
 				3E444527178E1DB1008EE2EB /* Frameworks */,
 				3E444526178E1DB1008EE2EB /* Products */,
 			);
@@ -60,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3E444525178E1DB1008EE2EB /* llvmOSX */,
+				3E3E31E6178E2066004094DA /* llvmOSX Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3E444528178E1DB1008EE2EB /* Foundation.framework */,
+				3E3E31E7178E2066004094DA /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +140,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3E3E31E5178E2066004094DA /* llvmOSX Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E3E31F4178E2066004094DA /* Build configuration list for PBXNativeTarget "llvmOSX Tests" */;
+			buildPhases = (
+				3E3E31E2178E2066004094DA /* Sources */,
+				3E3E31E3178E2066004094DA /* Frameworks */,
+				3E3E31E4178E2066004094DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E3E31F3178E2066004094DA /* PBXTargetDependency */,
+			);
+			name = "llvmOSX Tests";
+			productName = "llvmOSX Tests";
+			productReference = 3E3E31E6178E2066004094DA /* llvmOSX Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3E444524178E1DB1008EE2EB /* llvmOSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E444533178E1DB2008EE2EB /* Build configuration list for PBXNativeTarget "llvmOSX" */;
@@ -118,6 +183,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Denny C. Dai";
+				TargetAttributes = {
+					3E3E31E5178E2066004094DA = {
+						TestTargetID = 3E444524178E1DB1008EE2EB;
+					};
+				};
 			};
 			buildConfigurationList = 3E444520178E1DB1008EE2EB /* Build configuration list for PBXProject "llvmOSX" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -132,11 +202,31 @@
 			projectRoot = "";
 			targets = (
 				3E444524178E1DB1008EE2EB /* llvmOSX */,
+				3E3E31E5178E2066004094DA /* llvmOSX Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3E3E31E4178E2066004094DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3E31EE178E2066004094DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3E3E31E2178E2066004094DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3E31F0178E2066004094DA /* llvmOSX_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3E444521178E1DB1008EE2EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,7 +237,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3E3E31F3178E2066004094DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E444524178E1DB1008EE2EB /* llvmOSX */;
+			targetProxy = 3E3E31F2178E2066004094DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E3E31EC178E2066004094DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E3E31ED178E2066004094DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3E3E31F5178E2066004094DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "llvmOSX Tests/llvmOSX Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "llvmOSX Tests/llvmOSX Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3E3E31F6178E2066004094DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "llvmOSX Tests/llvmOSX Tests-Prefix.pch";
+				INFOPLIST_FILE = "llvmOSX Tests/llvmOSX Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		3E444531178E1DB2008EE2EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,6 +382,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E3E31F4178E2066004094DA /* Build configuration list for PBXNativeTarget "llvmOSX Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E3E31F5178E2066004094DA /* Debug */,
+				3E3E31F6178E2066004094DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3E444520178E1DB1008EE2EB /* Build configuration list for PBXProject "llvmOSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

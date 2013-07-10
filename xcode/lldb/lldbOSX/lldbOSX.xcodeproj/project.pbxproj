@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E66EE61178E278D009DF8E2 /* DummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E66EE60178E278D009DF8E2 /* DummyClass.m */; };
 		3EB7786E178E1F4400CD9922 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB7786D178E1F4400CD9922 /* Foundation.framework */; };
 		3EB77871178E1F4400CD9922 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB77870178E1F4400CD9922 /* main.m */; };
 		3EB77875178E1F4400CD9922 /* lldbOSX.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EB77874178E1F4400CD9922 /* lldbOSX.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E66EE5F178E278D009DF8E2 /* DummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyClass.h; sourceTree = "<group>"; };
+		3E66EE60178E278D009DF8E2 /* DummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyClass.m; sourceTree = "<group>"; };
 		3EB7786A178E1F4400CD9922 /* lldbOSX */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lldbOSX; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB7786D178E1F4400CD9922 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3EB77870178E1F4400CD9922 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 			children = (
 				3EB77870178E1F4400CD9922 /* main.m */,
 				3EB77874178E1F4400CD9922 /* lldbOSX.1 */,
+				3E66EE5F178E278D009DF8E2 /* DummyClass.h */,
+				3E66EE60178E278D009DF8E2 /* DummyClass.m */,
 				3EB77872178E1F4400CD9922 /* Supporting Files */,
 			);
 			path = lldbOSX;
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB77871178E1F4400CD9922 /* main.m in Sources */,
+				3E66EE61178E278D009DF8E2 /* DummyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +259,7 @@
 				3EB7787A178E1F4400CD9922 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
