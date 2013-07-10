@@ -1,15 +1,35 @@
 ## ObjC Language Practice Project
 
-based on  WWDC Session 
-
-
 
 ### Reference 
 
 * WWDC 2013 # 404 - Advances in Objective-C
 * WWDC 2012 # 405 - Modern Objective-C
-* WWDC 2012 - Adopting Automatic Reference Counting 
-* WWDC 2012 - Migrating to Modern Objective-C
+* WWDC 2012 # 406 - Adopting Automatic Reference Counting
+* WWDC 2012 # 413 - Migrating to Modern Objective-C
+
+
+
+
+### ARC Basic
+* Think about ownership
+    * strong references keep objects alive
+    * objects deallocated when no more strong references remain
+* Think about your __object graph__
+
+* __Weak Reference__
+    * safe, non-retaining reference
+    * __drop itself__ to nil automatically 
+
+
+* naming prefix that will transfer ownership
+    * `alloc`
+    * `copy`
+    * `init`
+    * `mutableCopy`
+    * `new`
+
+* use `__weak` to decorate the delegate variable 
 
 ### Notes 
 
