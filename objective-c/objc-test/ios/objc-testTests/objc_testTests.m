@@ -51,9 +51,6 @@ typedef NS_OPTIONS(NSUInteger, MyOptions){
 - (void)testObjC
 {
 
-    
-    
-    
     TestObject* obj = [[TestObject alloc] initWithName:@"denny"];
 
     

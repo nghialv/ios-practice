@@ -55,7 +55,6 @@
 		3E80E6F917822058000242ED /* objc-testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "objc-testTests-Info.plist"; sourceTree = "<group>"; };
 		3E80E6FB17822058000242ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E80E6FD17822058000242ED /* objc_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_testTests.m; sourceTree = "<group>"; };
-		3E80E70717822068000242ED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		3E80E70817822CA5000242ED /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		3E80E70917822CA5000242ED /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +86,6 @@
 		3E80E6C617822058000242ED = {
 			isa = PBXGroup;
 			children = (
-				3E80E70717822068000242ED /* README.md */,
 				3E80E6D817822058000242ED /* objc-test */,
 				3E80E6F717822058000242ED /* objc-testTests */,
 				3E80E6D117822058000242ED /* Frameworks */,
@@ -474,6 +472,7 @@
 				3E80E70317822058000242ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E80E70417822058000242ED /* Build configuration list for PBXNativeTarget "objc-testTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +481,7 @@
 				3E80E70617822058000242ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
