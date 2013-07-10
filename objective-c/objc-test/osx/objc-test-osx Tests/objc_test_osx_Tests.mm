@@ -19,21 +19,68 @@ struct MyStruct {
 
 
 @protocol MyListProtocol <NSObject>
+@optional
+-(void)doThisOptionally;
+@required
+-(void)mustDoThis;
 @end
+
 
 //subscripting support
 @interface MyList : NSObject{
-    myObject* _obj;
+    myObject* _obj;  //private
+    
+    id _ivar;
 }
 -(myObject*)getObj;
 -(myObject*)newObj;
++(void)singletonOp; //singleton operation declared as a class level method
 
+//property declaration represents a contract
+@property(copy) NSString* title; //for value style property, usually take a private copy itself
+@property(strong) NSArray* list; //for reference to an external container, take ownership and avoid copy !
+@property(readonly, nonatomic) float radius; //a characteristic property of the object | this is no atomait
+@property(readonly, nonatomic) float area;
 @property(weak) id<MyListProtocol> delegate; //delegate is weak so that it automaticall gets nil
 
-+(void)singletonOp; //singleton operation declared as a class level method
+
+//ideally put it in private class extension
+//outlets to the subview of a view controller's main view should be weak. it is the main view's responsibility to maintain its subview lifecycle and hierarchy
+//outlets to the top level view e.g. main view should be STRONG !!!
+@property(strong) IBOutlet NSView* mainView;
+@property(weak) IBOutlet NSView* subView;
 @end
 
 @implementation MyList
+
+//dealing with retain / strong reference cycle
+-(void)noCycle{
+    
+    //self retain cycle
+    __weak MyList* weak_self = self;
+    _ivar = ^{
+        
+        //predictably accessing weak variables
+        MyList* tmp_self = weak_self;
+        if(tmp_self)
+            NSLog(@"%@",tmp_self->_obj);
+    };
+}
+
+-(void)hasCycle{
+
+    _ivar = ^{
+
+        
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
+NSLog(@"%@", _obj);
+        
+#pragma clang diagnostic pop
+        
+    };
+    
+}
 
 +(void)singletonOp{
     
@@ -102,6 +149,49 @@ struct MyStruct {
     [super tearDown];
 }
 
+
+-(void)testRetainCycle{
+    
+    //no cycle test
+    __weak MyList* weak_list;
+    {
+        MyList* list = [[MyList alloc] init];
+        weak_list = list;
+    
+        [list noCycle];
+    }
+    
+    //list is destroyed , no cycle
+    XCTAssert(weak_list == nil, @"");
+    
+    
+    //has cycle test
+    weak_list = nil;
+    {
+        MyList* list = [[MyList alloc] init];
+        weak_list = list;
+        
+        [list hasCycle];
+    }
+    
+    //list and its ivar block are bi-retained
+    XCTAssert(weak_list != nil, @"");
+}
+
+-(void)testFastEnumeration
+{
+    NSArray* arr = @[@(1), @(2), @(3)];
+    
+    for(NSNumber* num in arr){
+        NSLog(@"%@",num);
+    }
+
+    [arr sortedArrayUsingComparator:^(NSNumber* n1, NSNumber* n2){
+        NSComparisonResult result = NSOrderedAscending;
+        return result;
+    }];
+}
+
 -(void)testSingletonPattern{
     [MyList singletonOp];
 }
@@ -164,7 +254,7 @@ struct MyStruct {
     {
 
 #pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#pragma clang diagnostic ignored "-Warc-unsafe-retained-assign"
         
         //so the lifecycle of the obj only lives within a single statement
         obj = [[myObject alloc] initWithName:@"localvar"];

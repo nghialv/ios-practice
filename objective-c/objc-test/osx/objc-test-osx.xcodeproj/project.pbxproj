@@ -41,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E44451B178E165B008EE2EB /* llvm_lang_test.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = llvm_lang_test.mm; sourceTree = "<group>"; };
 		3E93A421178DC85F00D5C60C /* objc-test-osx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "objc-test-osx"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E93A424178DC85F00D5C60C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E93A427178DC85F00D5C60C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 				3E93A447178DC9C900D5C60C /* myObject.h */,
 				3E93A448178DC9C900D5C60C /* myObject.mm */,
 				3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.mm */,
+				3E44451B178E165B008EE2EB /* llvm_lang_test.mm */,
 				3E93A43A178DC8B400D5C60C /* Supporting Files */,
 			);
 			path = "objc-test-osx Tests";

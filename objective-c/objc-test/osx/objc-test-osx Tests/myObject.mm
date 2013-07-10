@@ -16,6 +16,8 @@
 
 -(id)initWithName:(NSString *)name{
     if(self = [super init]){
+        
+        //DO NOT use accessor method in init
         _name = name;  //name retained name as it is strong ref
         
     }

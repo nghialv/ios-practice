@@ -18,15 +18,7 @@
     
 -(void)foo{
     
-    //self retain cycle 
-    __weak TestObject* weak_self = self;
-    _ivar1 = ^{
-        
-        //predictably accessing weak variables 
-        TestObject* tmp_self = weak_self;
-        if(tmp_self)
-            [tmp_self->_ivar2 class];
-    };
+
 }
 
 -(instancetype)initWithName:(NSString*)name{
