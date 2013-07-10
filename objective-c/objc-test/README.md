@@ -1,9 +1,16 @@
 ## ObjC Language Practice Project
 
 based on  WWDC Session 
-*  [2013@404] -  Advances in Objective-C
-* [2013@405] - Modern Objective-C
 
+
+
+### Reference 
+
+* WWDC 2013 # 404 - Advances in Objective-C
+
+* WWDC 2012 # 405 - Modern Objective-C
+* WWDC 2012 - Adopting Automatic Reference Counting 
+* WWDC 2012 - Migrating to Modern Objective-C
 
 ### Notes 
 
@@ -91,7 +98,4 @@ Others
 
 
 
-### Reference 
-
-* WWDC 2012 # 405 - Modern Objective-C
 

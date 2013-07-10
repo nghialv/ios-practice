@@ -9,10 +9,16 @@
 #import <XCTest/XCTest.h>
 #import "TestObject.h"
 
-//enum MyType : NSInteger{
-//    MyTypeOne,
-//    MyTypeTwo
-//};
+enum MyType : NSInteger{
+    MyTypeOne,
+    MyTypeTwo
+};
+
+typedef enum MyOtherType : NSInteger{
+    MyOtherType1,
+    MyOtherType2
+}MyOtherType;
+
 
 typedef NS_ENUM(NSUInteger, MyEnum){ABC, JKL, XYZ};
 
@@ -42,9 +48,6 @@ typedef NS_OPTIONS(NSUInteger, MyOptions){
     
     [super tearDown];
 }
-    
-    
-
 
     
     
@@ -52,14 +55,10 @@ typedef NS_OPTIONS(NSUInteger, MyOptions){
 {
 
     TestObject* obj = [[TestObject alloc] initWithName:@"denny"];
-
+    NSLog(@"%@",obj);
     
     if(__has_feature(objc_instancetype)) NSLog(@"using objc instancetype");
-    
-    id myInt = @(12);
-    id myStr = @"dennycd";
-    id myArr = @[myInt, myStr];
-//    id myDict = { @"first" ,  myInt, @"second" : myStr };
+
     
 }
 

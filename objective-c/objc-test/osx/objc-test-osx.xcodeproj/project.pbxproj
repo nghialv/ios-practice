@@ -12,7 +12,9 @@
 		3E93A42C178DC85F00D5C60C /* objc_test_osx.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3E93A42B178DC85F00D5C60C /* objc_test_osx.1 */; };
 		3E93A438178DC8B400D5C60C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E93A437178DC8B400D5C60C /* XCTest.framework */; };
 		3E93A43E178DC8B400D5C60C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E93A43C178DC8B400D5C60C /* InfoPlist.strings */; };
-		3E93A440178DC8B400D5C60C /* objc_test_osx_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.m */; };
+		3E93A440178DC8B400D5C60C /* objc_test_osx_Tests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.mm */; };
+		3E93A449178DC9C900D5C60C /* myObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E93A448178DC9C900D5C60C /* myObject.mm */; };
+		3E93A44A178DC9C900D5C60C /* myObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E93A448178DC9C900D5C60C /* myObject.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +50,10 @@
 		3E93A437178DC8B400D5C60C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E93A43B178DC8B400D5C60C /* objc-test-osx Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "objc-test-osx Tests-Info.plist"; sourceTree = "<group>"; };
 		3E93A43D178DC8B400D5C60C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_test_osx_Tests.m; sourceTree = "<group>"; };
+		3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = objc_test_osx_Tests.mm; sourceTree = "<group>"; };
 		3E93A441178DC8B400D5C60C /* objc-test-osx Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-test-osx Tests-Prefix.pch"; sourceTree = "<group>"; };
+		3E93A447178DC9C900D5C60C /* myObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myObject.h; sourceTree = "<group>"; };
+		3E93A448178DC9C900D5C60C /* myObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = myObject.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				3E93A427178DC85F00D5C60C /* main.m */,
-				3E93A42B178DC85F00D5C60C /* objc_test_osx.1 */,
 				3E93A429178DC85F00D5C60C /* Supporting Files */,
 			);
 			path = "objc-test-osx";
@@ -113,6 +116,7 @@
 		3E93A429178DC85F00D5C60C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E93A42B178DC85F00D5C60C /* objc_test_osx.1 */,
 				3E93A42A178DC85F00D5C60C /* objc-test-osx-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -121,7 +125,9 @@
 		3E93A439178DC8B400D5C60C /* objc-test-osx Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.m */,
+				3E93A447178DC9C900D5C60C /* myObject.h */,
+				3E93A448178DC9C900D5C60C /* myObject.mm */,
+				3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.mm */,
 				3E93A43A178DC8B400D5C60C /* Supporting Files */,
 			);
 			path = "objc-test-osx Tests";
@@ -223,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E93A449178DC9C900D5C60C /* myObject.mm in Sources */,
 				3E93A428178DC85F00D5C60C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E93A440178DC8B400D5C60C /* objc_test_osx_Tests.m in Sources */,
+				3E93A44A178DC9C900D5C60C /* myObject.mm in Sources */,
+				3E93A440178DC8B400D5C60C /* objc_test_osx_Tests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +415,7 @@
 				3E93A445178DC8B400D5C60C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
