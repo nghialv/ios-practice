@@ -12,5 +12,4 @@
 @property(strong) NSString* name;
 -(id)initWithName:(NSString*)name;
 
-
 @end

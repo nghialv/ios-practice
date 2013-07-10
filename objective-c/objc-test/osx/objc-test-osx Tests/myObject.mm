@@ -16,9 +16,18 @@
 
 -(id)initWithName:(NSString *)name{
     if(self = [super init]){
-        _name = name; 
+        _name = name;  //name retained name as it is strong ref
+        
     }
     return self;
+}
+
+-(void)dealloc{
+    NSLog(@"myObject::dealloc %@",_name);
+}
+
+-(NSString *)description{
+    return [NSString stringWithFormat:@"[myObject:%@]",_name];
 }
 
 @end
