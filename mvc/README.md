@@ -19,6 +19,24 @@
 * __WWDC 2013 - Using Fonts with Text Kit__
 * __WWDC 2013 - Advanced Text Layouts and Effects with Text Kit__
 
+
+### Adaptive Multitasking
+
+* __What's New in Multitasking__
+
+### UIKit Dynamics
+
+* __Getting Started with UIKit Dynamics__
+* __Advanced Techniques with UIKit Dynamics__
+* __Exploring Scroll Views on iOS 7__
+
+
+### Motion Effects
+
+* __Implementation Engaging UI on iOS__
+
+
+
 ### Dynamic Type
 
 ```objective-c
@@ -133,34 +151,25 @@ no Segmented control style !!!
 @end
 ```
 
-### Adaptive Multitasking
-
-* __What's New in Multitasking__
-
-### UIKit Dynamics
-
-* __Getting Started with UIKit Dynamics__
-* __Advanced Techniques with UIKit Dynamics__
-* __Exploring Scroll Views on iOS 7__
-
-
-### Motion Effects
-
-* __Implementation Engaging UI on iOS__
-
 
 ### Overlapping Effect
 
 radically faster snapshot effect
     * `-[UIView drawHierarchyInRect:]`
 
+### App State Restoration
 
+methods on UIApplicaiton object
 
+```objective-c
+//called from methods invoked by state restoration
+- (void)ignoreSnapshotOnNextApplicationLaunch;
 
+//non view and non-view controller objects can now participate
++ (void)registerObjectForStateRestoration:(id<UIStateRestoring>)object 
+    restorationIdentifier:(NSString *)restorationIdentifier;
+```
 
-
-
-
-
+Blue tooth state restore
 
 
