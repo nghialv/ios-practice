@@ -5,6 +5,7 @@ ______
 ### Reference 
 
 * WWDC 2013 - Advanced Debugging with LLDB
+* WWDC 2013 - Debugging with Xcode
 
 * WWDC 2012 - Debugging with LLDB
 * WWDC 2010 - Advanced Memory Analysis with Instruments
@@ -184,9 +185,20 @@ print >> result, "depth: " counter
 ```
 
 
+### Breakpoint Actions via Python Function
+* associate a breakpoint with a python Function
+* the function is invoked whenever the breakpoint is hit
+* the function can return false to tell LLDB to continue your program without breaking at this point
 
+`breakpoint command add --script python --python-function foo 1`
 
+### Productizing Customization
 
+* LLDB-specific configuration file
+    * `~/.lldbinit`
+    * loaded at debugger startup
+    * load scripts
+    * or `~/.lldbinit-Xcode` for xcode-specific version
 
 
 
