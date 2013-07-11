@@ -3,7 +3,7 @@
 #### WWDC
 
 * Getting Started with UIKit Dynamics 
-* Advanced Techniques with UIKit Dynamics 
+* Advanced Techniques with UIKit Dynamics
 
 
 #### UIDynamicAnimator 
