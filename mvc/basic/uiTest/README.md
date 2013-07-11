@@ -1,17 +1,23 @@
 ## iOS 7 UIKit Practice
 
+
+### Main Source
+
+* <https://developer.apple.com/library/prerelease/ios/design/index.html#//apple_ref/doc/uid/TP40013289>
+
+
 ### Reference
 
 * WWDC 2013 - Building User Interface for iOS 7
-
-* WWDC 2013 - Introducing Text Kit
-* WWDC 2013 - Using Fonts with Text Kit
-* WWDC 2013 - Advanced Text Layouts and Effects with Text Kit
-
 * WWDC 2013 - Custom Transitions Using View Controllers
 * WWDC 2013 - Customizing Your app’s appearance in iOS 7
+* WWDC 2013 - What's New in Cocoa Touch
 
+### Text Kit
 
+* __WWDC 2013 - Introducing Text Kit__
+* __WWDC 2013 - Using Fonts with Text Kit__
+* __WWDC 2013 - Advanced Text Layouts and Effects with Text Kit__
 
 ### Dynamic Type
 
@@ -129,13 +135,24 @@ no Segmented control style !!!
 
 ### Adaptive Multitasking
 
+* __What's New in Multitasking__
+
+### UIKit Dynamics
+
+* __Getting Started with UIKit Dynamics__
+* __Advanced Techniques with UIKit Dynamics__
+* __Exploring Scroll Views on iOS 7__
 
 
+### Motion Effects
+
+* __Implementation Engaging UI on iOS__
 
 
+### Overlapping Effect
 
-
-
+radically faster snapshot effect
+    * `-[UIView drawHierarchyInRect:]`
 
 
 
