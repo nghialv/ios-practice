@@ -108,17 +108,17 @@ ______
 
 ### Commands
 
-`frame variable`
+__frame variable__
     
     * show all my local
     * `frame variable [var_name]` to show specific
 
-`expression [exp]`  or `p [exp]`
+__expression [exp]  or __p [exp]__
 
-* execute arbitrary code
+    * execute arbitrary code
     * `expression (x+35)`
 
-`po [exp]`
+__po [exp]__
 
     * execute arbitrary code, then call the `description` selector on the result objc object !!
 
@@ -157,8 +157,31 @@ then in debugger cast the obj into this type
 
 ### Extending LLDB
 
+LLDB Object Model
+    * Scripting Bridge - python API
+
+SBTarget
+    * SBProcess
+        * SBThread
+            * SBFrame
 
 
+Adding a custom function to the lldb environment
+`command script add foo --python-function foo`  or `co sc a foo -f foo`
+
+Example
+
+```python
+//utilize LLDB Object Model
+thread = debugger.GetSelectedTarget().GetProcess().GetSelectedThread();
+
+//loop over all frames
+for frame in thread.frames:
+   if frame.function.name == "MyFunction":
+         //update counter
+
+print >> result, "depth: " counter
+```
 
 
 
