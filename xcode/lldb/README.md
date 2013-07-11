@@ -1,4 +1,6 @@
 ## LLDB Debuging Practice 
+______
+
 
 ### Reference 
 
@@ -40,7 +42,127 @@
 
 ### Set Breakpoints
 
+Stop at a line
+    
  * `b MyView.m:4`
  * `breakpoint set --file MyView.m --line 4`
 
 
+Stop at a method - symbolic breakpoint
+    * `b "-[MyViewA drawRect:]" `
+    * `breakpoint set --name "-[MyViewA drawRect:]" `
+
+
+
+Stop whenever any object receives a selector
+    * `b drawRect:`
+    * `breakpoint et --selector drawRect:`
+
+
+
+### Breakpoint Commands
+tell lldb to do a series of actions each time it hit a breakpoint
+
+    * `b "-[MyViewA setNeedsDisplayinRect:]"`
+    * `br co a`  or  `breakpoint command add`
+        * `p rect` or `expression rect`
+        * `bt` or `thread backtrace`
+        * `c` or `process continue`
+        * DONE
+
+### Breakpoint Conditions
+only break when a condition is met
+
+* `p id $myModel = self`   - create a persistent variable of type id and assign value to self
+* `b "-[MyModel dealloc]"` - will break when this method get called
+* `br m -c "self == $myModel"` - break only if current self is equal to myModel
+
+
+### Watch Point
+stop when a particular location in mem is modified
+
+* `watchpoint set variable self->_needsSynchronization` or `w s v self->_needsSynchronization`
+
+### Continue on
+    * `thread until 11` or `th u 11`
+
+LLDB will stop in one of the two cases
+    * at the specified line, if your code goes there
+    * after the function returns
+
+
+in XCode, right click on editor left panel, chose `Continue until here `
+
+### Hitting Breakpoints while stepping
+
+then click `Continue` will get u to next line of code in your previous stepping
+
+
+### Call your code by hand
+for code that is hard to reach during a test. Use Clang to actually call a function
+
+    * `b "-[ModelDerived removeDuplicates]"`
+    * `e -i false -- [self removeDuplicates]`  or `expression --ignore-breakpoints false -- [self removeDuplicates]`
+
+______
+
+### Commands
+
+`frame variable`
+    * show all my local
+    * `frame variable [var_name]` to show specific
+
+`expression [exp]`  or `p [exp]`
+    * execute arbitrary code
+    * `expression (x+35)`
+
+`po [exp]`
+    * execute arbitrary code, then call the `description` selector on the result objc object !!
+
+### Data format facility
+
+built-in formatters for system libraries
+    * STL
+    * CoreFoundation
+    * Foundation
+
+Python Summary
+    * match a type to a Python function
+    * base matcing by type
+    * <http://lldb.llvm.org/varformats.html>
+
+
+`ty su a MyAddress -F MyAddress_Summary` or
+`type summary add MyAddress --python-function MyAddress_Summary`
+
+
+
+### Deal with Opaque objects
+
+define a data structure in lldb, Use `$` to make it persistent
+
+```cpp
+expression
+struct $MyStruct {
+    int item1;
+    float item2;
+    char* item3;
+};
+```
+then in debugger cast the obj into this type
+
+
+### Extending LLDB
+
+
+
+
+
+
+
+
+
+
+
+#### Author
+Denny C. Dai <dennycd@me.com>
