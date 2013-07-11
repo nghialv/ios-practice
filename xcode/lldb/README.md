@@ -109,14 +109,17 @@ ______
 ### Commands
 
 `frame variable`
+    
     * show all my local
     * `frame variable [var_name]` to show specific
 
 `expression [exp]`  or `p [exp]`
-    * execute arbitrary code
+
+* execute arbitrary code
     * `expression (x+35)`
 
 `po [exp]`
+
     * execute arbitrary code, then call the `description` selector on the result objc object !!
 
 ### Data format facility
