@@ -53,7 +53,7 @@
 		3E5A6D60178F1BE600B08A9B /* uiTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "uiTestTests-Info.plist"; sourceTree = "<group>"; };
 		3E5A6D62178F1BE600B08A9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E5A6D64178F1BE600B08A9B /* uiTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uiTestTests.m; sourceTree = "<group>"; };
-		3E5A6D6E178F1BFD00B08A9B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3E5A6D6E178F1BFD00B08A9B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
