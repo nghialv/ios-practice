@@ -13,6 +13,9 @@
 * WWDC 2013 - Customizing Your app’s appearance in iOS 7
 * WWDC 2013 - What's New in Cocoa Touch
 
+* WWDC 2013 - What's New in iOS User Interface Design 
+
+
 ### Text Kit
 
 * __WWDC 2013 - Introducing Text Kit__

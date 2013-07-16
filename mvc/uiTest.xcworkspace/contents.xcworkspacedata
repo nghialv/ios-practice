@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:iosUIDesign/iosUIDesign.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:uiDynamics/uiDynamics.xcodeproj">
    </FileRef>
    <FileRef
@@ -18,8 +24,5 @@
    </FileRef>
    <FileRef
       location = "group:multiTasking/multiTasking.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:README.md">
    </FileRef>
 </Workspace>
