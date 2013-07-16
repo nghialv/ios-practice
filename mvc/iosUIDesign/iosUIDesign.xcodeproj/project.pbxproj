@@ -14,7 +14,7 @@
 		3E12E11B1795E8DC007F8F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E12E11A1795E8DC007F8F7D /* main.m */; };
 		3E12E11F1795E8DC007F8F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E12E11E1795E8DC007F8F7D /* AppDelegate.m */; };
 		3E12E1221795E8DC007F8F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E12E1201795E8DC007F8F7D /* Main.storyboard */; };
-		3E12E1251795E8DC007F8F7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E12E1241795E8DC007F8F7D /* ViewController.m */; };
+		3E12E1251795E8DC007F8F7D /* uiDesignMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E12E1241795E8DC007F8F7D /* uiDesignMainViewController.m */; };
 		3E12E1271795E8DC007F8F7D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E12E1261795E8DC007F8F7D /* Images.xcassets */; };
 		3E12E12E1795E8DC007F8F7D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E12E12D1795E8DC007F8F7D /* XCTest.framework */; };
 		3E12E12F1795E8DC007F8F7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E12E10E1795E8DC007F8F7D /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		3E12E11D1795E8DC007F8F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E12E11E1795E8DC007F8F7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E12E1211795E8DC007F8F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3E12E1231795E8DC007F8F7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E12E1241795E8DC007F8F7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E12E1231795E8DC007F8F7D /* uiDesignMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uiDesignMainViewController.h; sourceTree = "<group>"; };
+		3E12E1241795E8DC007F8F7D /* uiDesignMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = uiDesignMainViewController.m; sourceTree = "<group>"; };
 		3E12E1261795E8DC007F8F7D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E12E12C1795E8DC007F8F7D /* iosUIDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosUIDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E12E12D1795E8DC007F8F7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -117,8 +117,8 @@
 				3E12E11D1795E8DC007F8F7D /* AppDelegate.h */,
 				3E12E11E1795E8DC007F8F7D /* AppDelegate.m */,
 				3E12E1201795E8DC007F8F7D /* Main.storyboard */,
-				3E12E1231795E8DC007F8F7D /* ViewController.h */,
-				3E12E1241795E8DC007F8F7D /* ViewController.m */,
+				3E12E1231795E8DC007F8F7D /* uiDesignMainViewController.h */,
+				3E12E1241795E8DC007F8F7D /* uiDesignMainViewController.m */,
 				3E12E1261795E8DC007F8F7D /* Images.xcassets */,
 				3E12E1151795E8DC007F8F7D /* Supporting Files */,
 			);
@@ -254,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E12E1251795E8DC007F8F7D /* ViewController.m in Sources */,
+				3E12E1251795E8DC007F8F7D /* uiDesignMainViewController.m in Sources */,
 				3E12E11F1795E8DC007F8F7D /* AppDelegate.m in Sources */,
 				3E12E11B1795E8DC007F8F7D /* main.m in Sources */,
 			);

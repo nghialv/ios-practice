@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="13A510d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DtU-wH-YPq">
     <dependencies>
+        <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Main-->
+        <!--Ui Design Main View Controller - Main-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="uiDesignMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bRT-ba-YNt"/>
                         <viewControllerLayoutGuide type="bottom" id="aZg-EU-k9L"/>
@@ -28,6 +29,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="onClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z2t-as-n9n"/>
                                     <segue destination="SSh-i0-NPP" kind="push" id="zGY-on-VRU"/>
                                 </connections>
                             </button>
@@ -39,6 +41,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="7gL-er-clV"/>
+                    <connections>
+                        <outlet property="btnClick" destination="Mqs-KL-4lZ" id="ZTd-Ri-pLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
