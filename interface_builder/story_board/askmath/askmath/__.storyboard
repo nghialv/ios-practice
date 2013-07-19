@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4471.1" systemVersion="13A510d" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="all" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+    </dependencies>
+    <scenes>
+        <!--Am Main Menu View Controller-->
+        <scene sceneID="1CW-NE-54I">
+            <objects>
+                <viewController id="Edw-88-Kbd" customClass="amMainMenuViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G3H-qt-XDI">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oz7-n3-4SX">
+                                <rect key="frame" x="485" y="352" width="54" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTestClicked:" destination="Edw-88-Kbd" eventType="touchUpInside" id="5dJ-8d-Hz7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oz7-n3-4SX" firstAttribute="top" secondItem="G3H-qt-XDI" secondAttribute="top" constant="352" id="9rF-04-Ufe"/>
+                            <constraint firstItem="oz7-n3-4SX" firstAttribute="centerX" secondItem="G3H-qt-XDI" secondAttribute="centerX" type="default" id="SBx-3q-mbO"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUv-Uw-v6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="-2611"/>
+        </scene>
+        <!--Am View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="amViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5" userLabel="BaseView">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-8e-gez" userLabel="MenuView">
+                                <rect key="frame" x="0.0" y="0.0" width="74" height="748"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcq-Ow-20z" userLabel="HomeButton">
+                                        <rect key="frame" x="12" y="19" width="52" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" type="user" id="NkM-P7-JfW"/>
+                                            <constraint firstAttribute="width" constant="52" type="user" id="Suo-Cb-a9F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="Home.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="Home_Highlighted.png"/>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onHomeClicked:" destination="2" eventType="touchUpInside" id="zm4-pp-CBQ"/>
+                                            <segue destination="Edw-88-Kbd" kind="custom" identifier="showMainMenu" customClass="amViewControllerSegue" id="NV0-Di-T4z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQt-Ce-Jcw" userLabel="FormulaButton">
+                                        <rect key="frame" x="12" y="101" width="52" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" type="user" id="D3G-xY-Aii"/>
+                                            <constraint firstAttribute="width" constant="52" type="user" id="hRI-GQ-q9O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="Formulas.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="Formulas_Highlighted.png"/>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onFormulasClicked:" destination="2" eventType="touchUpInside" id="apG-dW-gCp"/>
+                                            <segue destination="709-uQ-Zq6" kind="custom" identifier="showFormulas" customClass="amViewControllerSegue" id="tmK-sT-8F1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alx-gH-Xpj" userLabel="SettingButton">
+                                        <rect key="frame" x="12" y="676" width="52" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" type="user" id="BOt-ei-C7o"/>
+                                            <constraint firstAttribute="width" constant="52" type="user" id="j8a-t3-GPl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="Settings.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="Setings_Highlighted.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="W35-1v-ha6" kind="modal" identifier="showSettings" customClass="amViewControllerSegue" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="fg1-aU-1lF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIm-pl-SMV" userLabel="StockButton">
+                                        <rect key="frame" x="14" y="172" width="48" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" type="user" id="fLe-kg-ZFl"/>
+                                            <constraint firstAttribute="height" constant="44" type="user" id="jXj-Il-Nca"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="Stock.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="Stock_Highlighted.png"/>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onStockClicked:" destination="2" eventType="touchUpInside" id="dpM-Cj-W2f"/>
+                                            <segue destination="709-uQ-Zq6" kind="custom" identifier="showStockFormulas" customClass="amViewControllerSegue" id="Nma-ND-hzP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.41967951642335766" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Alx-gH-Xpj" firstAttribute="leading" secondItem="sQt-Ce-Jcw" secondAttribute="leading" type="default" id="08K-0Q-9dv"/>
+                                    <constraint firstItem="sQt-Ce-Jcw" firstAttribute="top" secondItem="Pdf-8e-gez" secondAttribute="top" constant="101" id="3R6-Jt-WRL"/>
+                                    <constraint firstItem="hcq-Ow-20z" firstAttribute="top" secondItem="Pdf-8e-gez" secondAttribute="top" constant="19" id="9ww-kU-n5K"/>
+                                    <constraint firstAttribute="bottom" secondItem="Alx-gH-Xpj" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Ccv-ay-yvy"/>
+                                    <constraint firstItem="eIm-pl-SMV" firstAttribute="centerX" secondItem="sQt-Ce-Jcw" secondAttribute="centerX" type="default" id="D9q-Fv-mot"/>
+                                    <constraint firstItem="eIm-pl-SMV" firstAttribute="top" secondItem="sQt-Ce-Jcw" secondAttribute="bottom" constant="35" type="user" id="EC1-8X-6ve"/>
+                                    <constraint firstItem="hcq-Ow-20z" firstAttribute="leading" secondItem="Pdf-8e-gez" secondAttribute="leading" constant="12" id="Ncy-FM-FaY"/>
+                                    <constraint firstItem="hcq-Ow-20z" firstAttribute="leading" secondItem="sQt-Ce-Jcw" secondAttribute="leading" type="default" id="ZHE-Jc-2iD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AM3-qS-gQe" userLabel="ContentView">
+                                <rect key="frame" x="74" y="0.0" width="950" height="748"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pdf-8e-gez" secondAttribute="trailing" constant="950" type="user" id="1ap-Fp-JNh"/>
+                            <constraint firstItem="AM3-qS-gQe" firstAttribute="leading" secondItem="Pdf-8e-gez" secondAttribute="trailing" type="user" id="Doz-6P-Pdp"/>
+                            <constraint firstItem="AM3-qS-gQe" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="Dyr-pk-fux"/>
+                            <constraint firstItem="Pdf-8e-gez" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="TW9-Qp-wvL"/>
+                            <constraint firstItem="AM3-qS-gQe" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="bj8-2y-Eix"/>
+                            <constraint firstItem="AM3-qS-gQe" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="hG0-MG-jqx"/>
+                            <constraint firstItem="Pdf-8e-gez" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="ipj-Ol-MBr"/>
+                            <constraint firstItem="Pdf-8e-gez" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="mtB-WE-cPv"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="contentView" destination="AM3-qS-gQe" id="0zy-wI-AKZ"/>
+                        <outlet property="formulasBtn" destination="sQt-Ce-Jcw" id="VwS-v6-7xO"/>
+                        <outlet property="homeBtn" destination="hcq-Ow-20z" id="YHv-Ds-3dX"/>
+                        <outlet property="stockBtn" destination="eIm-pl-SMV" id="bTb-1s-iT3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2195" y="-1530"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="qrK-VC-Ll3">
+            <objects>
+                <tableViewController modalPresentationStyle="pageSheet" id="W35-1v-ha6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="adz-aG-3me">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="hbd-d3-WOv">
+                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="-1" y="0.0" width="770" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="W35-1v-ha6" id="Ycb-Hy-eJI"/>
+                            <outlet property="delegate" destination="W35-1v-ha6" id="Gad-MR-cfl"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wsf-cM-FHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-517" y="-810"/>
+        </scene>
+        <!--Am Error Handler View Controller - Error-->
+        <scene sceneID="c1r-R6-MAv">
+            <objects>
+                <viewController storyboardIdentifier="ErrorHandlerScene" title="Error" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CYE-pH-LIi" customClass="amErrorHandlerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ahb-e7-q1o">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXI-q6-GP3">
+                                <rect key="frame" x="348" y="481" width="73" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="ML5-Dn-c9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDismissClicked:" destination="CYE-pH-LIi" eventType="touchUpInside" id="Tlp-Bw-AFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="bXI-q6-GP3" secondAttribute="centerY" type="user" id="F2b-hv-4d9"/>
+                            <constraint firstItem="bXI-q6-GP3" firstAttribute="centerX" secondItem="Ahb-e7-q1o" secondAttribute="centerX" type="user" id="pPF-ws-wA7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIf-2m-Fan" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331" y="518"/>
+        </scene>
+        <!--Am Editor View Controller-->
+        <scene sceneID="yod-t7-vTY">
+            <objects>
+                <viewController id="S0P-9Q-gpp" customClass="amEditorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6y-By-8WX">
+                        <rect key="frame" x="0.0" y="20" width="703" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8p-JE-WUm">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="748"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R8p-JE-WUm" firstAttribute="leading" secondItem="r6y-By-8WX" secondAttribute="leading" type="default" id="cUd-nl-nxp"/>
+                            <constraint firstItem="R8p-JE-WUm" firstAttribute="top" secondItem="r6y-By-8WX" secondAttribute="top" type="default" id="fKO-ap-ZCA"/>
+                            <constraint firstItem="R8p-JE-WUm" firstAttribute="trailing" secondItem="r6y-By-8WX" secondAttribute="trailing" type="default" id="gBd-UE-FVR"/>
+                            <constraint firstItem="R8p-JE-WUm" firstAttribute="bottom" secondItem="r6y-By-8WX" secondAttribute="bottom" type="default" id="nnF-vK-0hK"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="scrollView" destination="R8p-JE-WUm" id="3hI-bV-cur"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZC-KD-YQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="-1925"/>
+        </scene>
+        <!--Table View Controller - Formulas-->
+        <scene sceneID="8gb-VC-93u">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="01f-29-Biz" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jr3-r0-No6">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="nOE-Dm-s0y">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="-1" y="0.0" width="322" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="01f-29-Biz" id="feH-5w-JNS"/>
+                            <outlet property="delegate" destination="01f-29-Biz" id="jVy-si-wnh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Formulas" id="JHB-OU-V9A"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wD-7o-pBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409" y="-2877"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gx8-mX-wV0">
+            <objects>
+                <navigationController id="hGt-eO-hbr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ppg-G3-ScF">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="01f-29-Biz" kind="relationship" relationship="rootViewController" id="hAd-dn-IHa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mrh-Iu-a0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="-2870"/>
+        </scene>
+        <!--Am Split View Controller-->
+        <scene sceneID="y1g-pA-UIy">
+            <objects>
+                <splitViewController id="709-uQ-Zq6" customClass="amSplitViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8kC-NH-1Fw"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="hGt-eO-hbr" kind="relationship" relationship="masterViewController" id="73K-c4-mWP"/>
+                        <segue destination="S0P-9Q-gpp" kind="relationship" relationship="detailViewController" id="hew-xh-50t"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2e7-Bk-qff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="-1714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Formulas.png" width="26" height="18"/>
+        <image name="Formulas_Highlighted.png" width="26" height="18"/>
+        <image name="Home.png" width="26" height="23"/>
+        <image name="Home_Highlighted.png" width="26" height="23"/>
+        <image name="Setings_Highlighted.png" width="26" height="26"/>
+        <image name="Settings.png" width="26" height="26"/>
+        <image name="Stock.png" width="24" height="22"/>
+        <image name="Stock_Highlighted.png" width="24" height="22"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nma-ND-hzP"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="13A510d" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="7jU-a7-GZ5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Main-->
+        <scene sceneID="Yml-T0-PAF">
+            <objects>
+                <viewController title="Main" id="7jU-a7-GZ5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ioQ-dB-9Db"/>
+                        <viewControllerLayoutGuide type="bottom" id="GaX-ZH-SMz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hzK-eR-mwl">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZ5-sV-rDu" userLabel="MenuView">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="wOY-Fq-NGg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vh6-DQ-H3B">
+                                <rect key="frame" x="90" y="0.0" width="934" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EZ5-sV-rDu" firstAttribute="bottom" secondItem="hzK-eR-mwl" secondAttribute="bottom" id="52q-ju-9b8"/>
+                            <constraint firstItem="Vh6-DQ-H3B" firstAttribute="leading" secondItem="EZ5-sV-rDu" secondAttribute="trailing" id="DFq-cT-u4o"/>
+                            <constraint firstItem="Vh6-DQ-H3B" firstAttribute="bottom" secondItem="hzK-eR-mwl" secondAttribute="bottom" id="EW8-fG-kYJ"/>
+                            <constraint firstItem="EZ5-sV-rDu" firstAttribute="leading" secondItem="hzK-eR-mwl" secondAttribute="leading" id="jaU-A9-s9q"/>
+                            <constraint firstAttribute="trailing" secondItem="Vh6-DQ-H3B" secondAttribute="trailing" id="k0f-cm-Tcj"/>
+                            <constraint firstItem="Vh6-DQ-H3B" firstAttribute="top" secondItem="hzK-eR-mwl" secondAttribute="top" id="lwq-hp-mZ9"/>
+                            <constraint firstItem="EZ5-sV-rDu" firstAttribute="top" secondItem="hzK-eR-mwl" secondAttribute="top" id="wtr-ec-t9c"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9n-Uk-c9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="-1298"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="13A510d" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="UaK-fv-lLf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+    </dependencies>
+    <scenes>
+        <!--Am Test View Controller-->
+        <scene sceneID="KeO-FT-Rbt">
+            <objects>
+                <viewController id="UaK-fv-lLf" customClass="amTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6QG-FQ-E2j"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8U-Nu-NzM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ose-BA-dm0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60H-OB-Rdb" customClass="amTestView">
+                                <rect key="frame" x="334" y="462" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EZP-pE-YJp"/>
+                                    <constraint firstAttribute="width" constant="100" id="PoI-77-xpM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="60H-OB-Rdb" firstAttribute="centerX" secondItem="ose-BA-dm0" secondAttribute="centerX" id="TtX-Vg-96C"/>
+                            <constraint firstItem="60H-OB-Rdb" firstAttribute="centerY" secondItem="ose-BA-dm0" secondAttribute="centerY" id="nID-Wl-sue"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testView" destination="60H-OB-Rdb" id="0R2-wc-XeY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XcM-yp-3C6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="-179"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
