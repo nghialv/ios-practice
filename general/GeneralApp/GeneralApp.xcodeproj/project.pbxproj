@@ -21,6 +21,10 @@
 		3E4675391799F6D900FDA35D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E46751B1799F6D900FDA35D /* UIKit.framework */; };
 		3E4675411799F6D900FDA35D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E46753F1799F6D900FDA35D /* InfoPlist.strings */; };
 		3E4675431799F6D900FDA35D /* GeneralAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4675421799F6D900FDA35D /* GeneralAppTests.m */; };
+		3E46754E1799F81F00FDA35D /* GAUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E46754D1799F81F00FDA35D /* GAUIApplication.m */; };
+		3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE11799FD5F0066FECA /* GAView.m */; };
+		3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE41799FD6F0066FECA /* GALayer.m */; };
+		3EE3ABE71799FD810066FECA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3ABE61799FD810066FECA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		3E46753E1799F6D900FDA35D /* GeneralAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeneralAppTests-Info.plist"; sourceTree = "<group>"; };
 		3E4675401799F6D900FDA35D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E4675421799F6D900FDA35D /* GeneralAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralAppTests.m; sourceTree = "<group>"; };
+		3E46754C1799F81F00FDA35D /* GAUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAUIApplication.h; sourceTree = "<group>"; };
+		3E46754D1799F81F00FDA35D /* GAUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAUIApplication.m; sourceTree = "<group>"; };
+		3EE3ABE01799FD5F0066FECA /* GAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAView.h; sourceTree = "<group>"; };
+		3EE3ABE11799FD5F0066FECA /* GAView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAView.m; sourceTree = "<group>"; };
+		3EE3ABE31799FD6F0066FECA /* GALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GALayer.h; sourceTree = "<group>"; };
+		3EE3ABE41799FD6F0066FECA /* GALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GALayer.m; sourceTree = "<group>"; };
+		3EE3ABE61799FD810066FECA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE3ABE71799FD810066FECA /* QuartzCore.framework in Frameworks */,
 				3E46751A1799F6D900FDA35D /* CoreGraphics.framework in Frameworks */,
 				3E46751C1799F6D900FDA35D /* UIKit.framework in Frameworks */,
 				3E4675181799F6D900FDA35D /* Foundation.framework in Frameworks */,
@@ -101,6 +113,7 @@
 		3E4675161799F6D900FDA35D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EE3ABE61799FD810066FECA /* QuartzCore.framework */,
 				3E4675171799F6D900FDA35D /* Foundation.framework */,
 				3E4675191799F6D900FDA35D /* CoreGraphics.framework */,
 				3E46751B1799F6D900FDA35D /* UIKit.framework */,
@@ -112,12 +125,9 @@
 		3E46751D1799F6D900FDA35D /* GeneralApp */ = {
 			isa = PBXGroup;
 			children = (
-				3E4675261799F6D900FDA35D /* AppDelegate.h */,
-				3E4675271799F6D900FDA35D /* AppDelegate.m */,
-				3E4675291799F6D900FDA35D /* Main.storyboard */,
-				3E46752C1799F6D900FDA35D /* ViewController.h */,
-				3E46752D1799F6D900FDA35D /* ViewController.m */,
-				3E46752F1799F6D900FDA35D /* Images.xcassets */,
+				3EE3ABE91799FDAC0066FECA /* App */,
+				3EE3ABE81799FD970066FECA /* Controller */,
+				3EE3ABDF1799FD440066FECA /* View */,
 				3E46751E1799F6D900FDA35D /* Supporting Files */,
 			);
 			path = GeneralApp;
@@ -126,6 +136,7 @@
 		3E46751E1799F6D900FDA35D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3E46752F1799F6D900FDA35D /* Images.xcassets */,
 				3E46751F1799F6D900FDA35D /* GeneralApp-Info.plist */,
 				3E4675201799F6D900FDA35D /* InfoPlist.strings */,
 				3E4675231799F6D900FDA35D /* main.m */,
@@ -150,6 +161,38 @@
 				3E46753F1799F6D900FDA35D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EE3ABDF1799FD440066FECA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EE3ABE01799FD5F0066FECA /* GAView.h */,
+				3EE3ABE11799FD5F0066FECA /* GAView.m */,
+				3EE3ABE31799FD6F0066FECA /* GALayer.h */,
+				3EE3ABE41799FD6F0066FECA /* GALayer.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3EE3ABE81799FD970066FECA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3E4675291799F6D900FDA35D /* Main.storyboard */,
+				3E46752C1799F6D900FDA35D /* ViewController.h */,
+				3E46752D1799F6D900FDA35D /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3EE3ABE91799FDAC0066FECA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3E46754C1799F81F00FDA35D /* GAUIApplication.h */,
+				3E46754D1799F81F00FDA35D /* GAUIApplication.m */,
+				3E4675261799F6D900FDA35D /* AppDelegate.h */,
+				3E4675271799F6D900FDA35D /* AppDelegate.m */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +297,10 @@
 			files = (
 				3E46752E1799F6D900FDA35D /* ViewController.m in Sources */,
 				3E4675281799F6D900FDA35D /* AppDelegate.m in Sources */,
+				3E46754E1799F81F00FDA35D /* GAUIApplication.m in Sources */,
+				3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */,
 				3E4675241799F6D900FDA35D /* main.m in Sources */,
+				3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +505,7 @@
 				3E4675481799F6D900FDA35D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E4675491799F6D900FDA35D /* Build configuration list for PBXNativeTarget "GeneralAppTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +514,7 @@
 				3E46754B1799F6D900FDA35D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

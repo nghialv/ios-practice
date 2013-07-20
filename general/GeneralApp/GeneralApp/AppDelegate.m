@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+/**
+ In iOS 5 and later, you can use the app delegate to handle other app-related events. The Xcode project templates declare the app delegate as a subclass of UIResponder. If the UIApplication object does not handle an event, it dispatches the event to your app delegate for processing.
+  see UIResponder Class Reference.
+ **/
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
