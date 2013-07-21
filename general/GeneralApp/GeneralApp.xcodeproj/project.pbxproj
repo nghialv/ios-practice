@@ -14,7 +14,7 @@
 		3E4675241799F6D900FDA35D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4675231799F6D900FDA35D /* main.m */; };
 		3E4675281799F6D900FDA35D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4675271799F6D900FDA35D /* AppDelegate.m */; };
 		3E46752B1799F6D900FDA35D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4675291799F6D900FDA35D /* Main.storyboard */; };
-		3E46752E1799F6D900FDA35D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E46752D1799F6D900FDA35D /* ViewController.m */; };
+		3E46752E1799F6D900FDA35D /* GAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E46752D1799F6D900FDA35D /* GAViewController.m */; };
 		3E4675301799F6D900FDA35D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E46752F1799F6D900FDA35D /* Images.xcassets */; };
 		3E4675371799F6D900FDA35D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4675361799F6D900FDA35D /* XCTest.framework */; };
 		3E4675381799F6D900FDA35D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4675171799F6D900FDA35D /* Foundation.framework */; };
@@ -25,6 +25,7 @@
 		3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE11799FD5F0066FECA /* GAView.m */; };
 		3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE41799FD6F0066FECA /* GALayer.m */; };
 		3EE3ABE71799FD810066FECA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3ABE61799FD810066FECA /* QuartzCore.framework */; };
+		3EE3ABEE179BA7B00066FECA /* GAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABED179BA7B00066FECA /* GAObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,8 @@
 		3E4675261799F6D900FDA35D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E4675271799F6D900FDA35D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E46752A1799F6D900FDA35D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3E46752C1799F6D900FDA35D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E46752D1799F6D900FDA35D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E46752C1799F6D900FDA35D /* GAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAViewController.h; sourceTree = "<group>"; };
+		3E46752D1799F6D900FDA35D /* GAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAViewController.m; sourceTree = "<group>"; };
 		3E46752F1799F6D900FDA35D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3E4675351799F6D900FDA35D /* GeneralAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4675361799F6D900FDA35D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,6 +65,8 @@
 		3EE3ABE31799FD6F0066FECA /* GALayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GALayer.h; sourceTree = "<group>"; };
 		3EE3ABE41799FD6F0066FECA /* GALayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GALayer.m; sourceTree = "<group>"; };
 		3EE3ABE61799FD810066FECA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3EE3ABEC179BA7B00066FECA /* GAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAObject.h; sourceTree = "<group>"; };
+		3EE3ABED179BA7B00066FECA /* GAObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,7 @@
 		3E46751D1799F6D900FDA35D /* GeneralApp */ = {
 			isa = PBXGroup;
 			children = (
+				3EE3ABEB179BA79C0066FECA /* Data */,
 				3EE3ABE91799FDAC0066FECA /* App */,
 				3EE3ABE81799FD970066FECA /* Controller */,
 				3EE3ABDF1799FD440066FECA /* View */,
@@ -178,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				3E4675291799F6D900FDA35D /* Main.storyboard */,
-				3E46752C1799F6D900FDA35D /* ViewController.h */,
-				3E46752D1799F6D900FDA35D /* ViewController.m */,
+				3E46752C1799F6D900FDA35D /* GAViewController.h */,
+				3E46752D1799F6D900FDA35D /* GAViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -193,6 +197,15 @@
 				3E4675271799F6D900FDA35D /* AppDelegate.m */,
 			);
 			name = App;
+			sourceTree = "<group>";
+		};
+		3EE3ABEB179BA79C0066FECA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3EE3ABEC179BA7B00066FECA /* GAObject.h */,
+				3EE3ABED179BA7B00066FECA /* GAObject.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E46752E1799F6D900FDA35D /* ViewController.m in Sources */,
+				3E46752E1799F6D900FDA35D /* GAViewController.m in Sources */,
 				3E4675281799F6D900FDA35D /* AppDelegate.m in Sources */,
 				3E46754E1799F81F00FDA35D /* GAUIApplication.m in Sources */,
 				3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */,
+				3EE3ABEE179BA7B00066FECA /* GAObject.m in Sources */,
 				3E4675241799F6D900FDA35D /* main.m in Sources */,
 				3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */,
 			);
