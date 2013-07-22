@@ -9,10 +9,13 @@
 #import "GAViewController.h"
 
 @interface GAViewController ()
-
+@property (weak, nonatomic) IBOutlet UIButton *clickBtn;
 @end
 
 @implementation GAViewController
+- (IBAction)onClicked:(id)sender {
+    NSLog(@"on clicked");
+}
 
 - (void)viewDidLoad
 {
