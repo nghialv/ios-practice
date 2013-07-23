@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "GACapabilityCheck.h"
+#import "GABackgroundTask.h"
+#import "GALocalNoti.h"
 
 /**
  In iOS 5 and later, you can use the app delegate to handle other app-related events. The Xcode project templates declare the app delegate as a subclass of UIResponder. If the UIApplication object does not handle an event, it dispatches the event to your app delegate for processing.
@@ -14,6 +17,12 @@
  **/
 @implementation AppDelegate
 
+//If the app is active and therefore running in the foreground, the method is called instead.
+//otherwise the noti is displayed on the device 
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"local noti");
+}
 
 /**
  If your app does not use view controllers for some reason, you must respond to status bar frame changes manually by registering for the UIApplicationDidChangeStatusBarFrameNotification notification. Your handler for this notification should get the status bar height and use it to adjust the height of your app’s views appropriately.
@@ -51,6 +60,12 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
     BOOL background = [UIApplication sharedApplication].applicationState == UIApplicationStateBackground;
     NSLog(@"%@", background ? @"BACKGROUND" : @"FOREGROUND");
     
+    
+    NSLog(@"MultiTasking: %@", [GACapabilityCheck hasMultiTasking] ? @"YES" : @"NO");
+    
+    
+    //test schedule a local noti
+    [GALocalNoti scheduleTestLocalNoti];
     
     // Override point for customization after application launch.
     return YES;
@@ -93,6 +108,10 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     NSLog(@"applicationDidEnterBackground");
+    
+    [GABackgroundTask runBackgroundTask:^{
+        NSLog(@"running some background tasking here...");
+    }];
     
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
