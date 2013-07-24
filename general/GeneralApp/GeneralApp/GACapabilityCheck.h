@@ -13,4 +13,7 @@
  **/
 @interface GACapabilityCheck : NSObject
 +(BOOL)hasMultiTasking; //check if the host supports multitasking and background execution
++(BOOL)isRunningiPad;
++(BOOL)isClassExist:(NSString*)cls; //check if a given class string is present in the system
++(BOOL)isInstanceMethodExist:(SEL)sel ForClass:(Class)cls;//check if an instance method exist on a class
 @end
