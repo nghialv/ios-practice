@@ -11,11 +11,79 @@
 #import "GABackgroundTask.h"
 #import "GALocalNoti.h"
 
+
+
 /**
  In iOS 5 and later, you can use the app delegate to handle other app-related events. The Xcode project templates declare the app delegate as a subclass of UIResponder. If the UIApplication object does not handle an event, it dispatches the event to your app delegate for processing.
   see UIResponder Class Reference.
  **/
 @implementation AppDelegate
+
+-(void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    NSLog(@"applicationDidReceiveMemoryWarning");
+}
+
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"application::openURL::sourceApplication:");
+
+    if ([[url scheme] isEqualToString:@"dennycd"]) {
+/*
+        ToDoItem *item = [[ToDoItem alloc] init];
+        NSString *taskName = [url query];
+        if (!taskName || ![self isValidTaskString:taskName]) { // must have a task name
+            return NO;
+        }
+        taskName = [taskName stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
+        item.toDoTask = taskName;
+        NSString *dateString = [url fragment];
+        if (!dateString || [dateString isEqualToString:@"today"]) {
+            item.dateDue = [NSDate date];
+        } else {
+            if (![self isValidDateString:dateString]) {
+                return NO;
+            }
+            // format: yyyymmddhhmm (24-hour clock)
+            NSString *curStr = [dateString substringWithRange:NSMakeRange(0, 4)];
+            NSInteger yeardigit = [curStr integerValue];
+            curStr = [dateString substringWithRange:NSMakeRange(4, 2)];
+            NSInteger monthdigit = [curStr integerValue];
+            curStr = [dateString substringWithRange:NSMakeRange(6, 2)];
+            NSInteger daydigit = [curStr integerValue];
+            curStr = [dateString substringWithRange:NSMakeRange(8, 2)];
+            NSInteger hourdigit = [curStr integerValue];
+            curStr = [dateString substringWithRange:NSMakeRange(10, 2)];
+            NSInteger minutedigit = [curStr integerValue];
+            
+            NSDateComponents *dateComps = [[NSDateComponents alloc] init];
+            [dateComps setYear:yeardigit];
+            [dateComps setMonth:monthdigit];
+            [dateComps setDay:daydigit];
+            [dateComps setHour:hourdigit];
+            [dateComps setMinute:minutedigit];
+            NSCalendar *calendar = [s[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+            NSDate *itemDate = [calendar dateFromComponents:dateComps];
+            if (!itemDate) {
+                return NO;
+            }
+            item.dateDue = itemDate;
+        }
+        
+        [(NSMutableArray *)self.list addObject:item];
+        return YES;
+*/
+    }
+    return NO;
+}
+
+//-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+//{
+//    
+//}
+
 
 /**
   if a view controller is flagged with a restore identifier but has no associated restoration class
@@ -86,10 +154,14 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
 //This method is your app’s first chance to execute code at launch time.
 -(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"willFinishLaunchingWithOptions");
+    NSLog(@"willFinishLaunchingWithOptions: %@", launchOptions);
     return YES;
 }
 
+/**
+ No matter which launch image is displayed by the system, your app always launches in a portrait orientation initially and then rotates as needed to the correct orientation. Therefore, your application:didFinishLaunchingWithOptions: method should always assume a portrait orientation when setting up your window and views. Shortly after the application:didFinishLaunchingWithOptions: method returns, the system sends any necessary orientation-change notifications to your app’s window, giving it and your app’s view controllers a chance to reorient views using the standard process.
+ 
+ **/
 /**
  Check the contents of the launch options dictionary for information about why the app was launched, and respond appropriately.
  Initialize the app’s critical data structures.
@@ -99,12 +171,13 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
 //This method allows you to perform any final initialization before your app is displayed to the user.
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"didFinishLaunchingWithOptions");
+    NSLog(@"didFinishLaunchingWithOptions: %@", launchOptions);
 
     //check whether we are launched into foreground or background
     BOOL background = [UIApplication sharedApplication].applicationState == UIApplicationStateBackground;
     NSLog(@"%@", background ? @"BACKGROUND" : @"FOREGROUND");
     
+    NSLog(@"device is %@", [GACapabilityCheck isRunningiPad] ? @"iPhone" : @"iPad");
     
     NSLog(@"MultiTasking: %@", [GACapabilityCheck hasMultiTasking] ? @"YES" : @"NO");
     
