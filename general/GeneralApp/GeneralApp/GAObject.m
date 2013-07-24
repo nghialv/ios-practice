@@ -16,4 +16,16 @@
 
 @implementation GAObject
 
+#pragma mark - UIDataSourceModelAssociation
+
+- (NSString *) modelIdentifierForElementAtIndexPath:(NSIndexPath *)idx inView:(UIView *)view
+{
+    return nil;
+}
+
+- (NSIndexPath *) indexPathForElementWithModelIdentifier:(NSString *)identifier inView:(UIView *)view
+{
+    return nil;
+}
+
 @end

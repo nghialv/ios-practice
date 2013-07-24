@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController restorationIdentifier="restoreGAViewController" id="vXZ-lx-hvc" customClass="GAViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="restoreGAViewController" storyboardIdentifier="myGAViewController" id="vXZ-lx-hvc" customClass="GAViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LD3-ez-s5m"/>
                         <viewControllerLayoutGuide type="bottom" id="asn-0B-9Kp"/>

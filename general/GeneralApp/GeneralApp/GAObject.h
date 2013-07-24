@@ -10,7 +10,10 @@
 
 /**
   A Sample Data Model Object
+ 
+ 
+  - provide persistent references to objects in your app for state restoration 
  **/
-@interface GAObject : NSObject
+@interface GAObject : NSObject <UIDataSourceModelAssociation>
 
 @end

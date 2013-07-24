@@ -17,6 +17,15 @@
  **/
 @implementation AppDelegate
 
+/**
+  if a view controller is flagged with a restore identifier but has no associated restoration class
+  this method will get called
+ **/
+-(UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
+{
+    NSLog(@"application::viewControllerWithRestorationIdentifierPath %@", identifierComponents);
+    return nil;
+}
 
 -(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
 {

@@ -31,11 +31,27 @@
 -(void)encodeRestorableStateWithCoder:(NSCoder *)coder
 {
     NSLog(@"GAView::encodeRestorableStateWithCoder");
+    [super encodeRestorableStateWithCoder:coder];
+    
+//    NSRange range = [self selectionRange];
+//    [coder encodeInt:range.length forKey:kMyTextViewSelectionRangeLength];
+//    [coder encodeInt:range.location forKey:kMyTextViewSelectionRangeLocation];
 }
 
 -(void)decodeRestorableStateWithCoder:(NSCoder *)coder
 {
     NSLog(@"GAView::decodeRestorableStateWithCoder");
+    [super decodeRestorableStateWithCoder:coder];
+//    if ([coder containsValueForKey:kMyTextViewSelectionRangeLength] &&
+//        [coder containsValueForKey:kMyTextViewSelectionRangeLocation]) {
+//        NSRange range;
+//        range.length = [coder decodeIntForKey:kMyTextViewSelectionRangeLength];
+//        range.location = [coder decodeIntForKey:kMyTextViewSelectionRangeLocation];
+//        if (range.length > 0)
+//            [self setSelectionRange:range];
+//    }
+//}
+
 }
 
 
