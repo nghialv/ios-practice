@@ -28,4 +28,15 @@
 }
 */
 
+-(void)encodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    NSLog(@"GAView::encodeRestorableStateWithCoder");
+}
+
+-(void)decodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    NSLog(@"GAView::decodeRestorableStateWithCoder");
+}
+
+
 @end
