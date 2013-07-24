@@ -17,6 +17,13 @@
  **/
 @implementation AppDelegate
 
+
+-(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    NSLog(@"performFetchWithCompletionHandler");
+    completionHandler(UIBackgroundFetchResultNewData);
+}
+
 //enable ui state preservation and restoration
 //https://developer.apple.com/library/ios/#documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13
 -(BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder
@@ -144,6 +151,7 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
     
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
 }
 
 //Lets you know that your app is moving out of the background and back into the foreground, but that it is not yet active.
