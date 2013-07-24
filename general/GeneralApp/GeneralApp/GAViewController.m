@@ -16,9 +16,15 @@
 
 @implementation GAViewController
 
+#pragma mark - Life Cycle
 
 - (IBAction)onClicked:(id)sender {
     NSLog(@"on clicked");
+    
+    //communitate with another app via URL scheme
+    NSURL *myURL = [NSURL URLWithString:@"http://dennycd.me"];
+    [[UIApplication sharedApplication] openURL:myURL];
+    
 }
 
 - (void)viewDidLoad
@@ -82,5 +88,16 @@
     }
     return vc;
 }
+
+
+#pragma mark - Orientation
+//-(NSUInteger)supportedInterfaceOrientations
+//{
+//}
+//
+//-(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+//{
+//    
+//}
 
 @end
