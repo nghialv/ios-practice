@@ -17,6 +17,35 @@
  **/
 @implementation AppDelegate
 
+//enable ui state preservation and restoration
+//https://developer.apple.com/library/ios/#documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/StatePreservation/StatePreservation.html#//apple_ref/doc/uid/TP40007072-CH11-SW13
+-(BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder
+{
+    return YES;
+}
+
+-(BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder
+{
+    return YES;
+}
+
+//Encode and decode any version information or additional state information for your app
+//do some high level info
+-(void)application:(UIApplication *)application willEncodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    NSLog(@"willEncodeRestorableStateWithCoder");
+}
+
+-(void)application:(UIApplication *)application didDecodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    NSLog(@"didDecodeRestorableStateWithCoder");
+}
+
+//-(UIViewController *)application:(UIApplication *)application viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents coder:(NSCoder *)coder
+//{
+//    
+//}
+
 //If the app is active and therefore running in the foreground, the method is called instead.
 //otherwise the noti is displayed on the device 
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
