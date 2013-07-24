@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0CF7A617A0942A00792F3A /* GASysConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0CF7A517A0942A00792F3A /* GASysConfig.m */; };
 		3E4675181799F6D900FDA35D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4675171799F6D900FDA35D /* Foundation.framework */; };
 		3E46751A1799F6D900FDA35D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4675191799F6D900FDA35D /* CoreGraphics.framework */; };
 		3E46751C1799F6D900FDA35D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E46751B1799F6D900FDA35D /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E0CF7A417A0942A00792F3A /* GASysConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASysConfig.h; sourceTree = "<group>"; };
+		3E0CF7A517A0942A00792F3A /* GASysConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASysConfig.m; sourceTree = "<group>"; };
 		3E4675141799F6D900FDA35D /* GeneralApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeneralApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4675171799F6D900FDA35D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E4675191799F6D900FDA35D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -227,6 +230,8 @@
 				3EF00C47179F329C0072BF92 /* GABackgroundTask.m */,
 				3EF00C49179F386D0072BF92 /* GALocalNoti.h */,
 				3EF00C4A179F386D0072BF92 /* GALocalNoti.m */,
+				3E0CF7A417A0942A00792F3A /* GASysConfig.h */,
+				3E0CF7A517A0942A00792F3A /* GASysConfig.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -283,6 +288,9 @@
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
 							};
 						};
 					};
@@ -344,6 +352,7 @@
 				3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */,
 				3EE3ABEE179BA7B00066FECA /* GAObject.m in Sources */,
 				3E4675241799F6D900FDA35D /* main.m in Sources */,
+				3E0CF7A617A0942A00792F3A /* GASysConfig.m in Sources */,
 				3EF00C44179F30CB0072BF92 /* GACapabilityCheck.m in Sources */,
 				3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */,
 			);
@@ -428,6 +437,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-mthumb",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -458,6 +471,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-mthumb",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -473,6 +490,7 @@
 				GCC_PREFIX_HEADER = "GeneralApp/GeneralApp-Prefix.pch";
 				INFOPLIST_FILE = "GeneralApp/GeneralApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -487,6 +505,7 @@
 				GCC_PREFIX_HEADER = "GeneralApp/GeneralApp-Prefix.pch";
 				INFOPLIST_FILE = "GeneralApp/GeneralApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
