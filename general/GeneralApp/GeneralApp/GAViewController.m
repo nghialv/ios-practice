@@ -29,4 +29,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)encodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    NSLog(@"GAViewController::encodeRestorableStateWithCoder");
+}
+
+-(void)decodeRestorableStateWithCoder:(NSCoder *)coder
+{
+    NSLog(@"GAViewController::encodeRestorableStateWithCoder");
+}
+
 @end
