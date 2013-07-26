@@ -185,6 +185,9 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
     //test schedule a local noti
     [GALocalNoti scheduleTestLocalNoti];
     
+    
+    //application.statusBarStyle = UIStatusBarStyleLightContent;
+    
     // Override point for customization after application launch.
     return YES;
 }

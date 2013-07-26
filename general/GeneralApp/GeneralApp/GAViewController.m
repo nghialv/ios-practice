@@ -39,6 +39,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+//this effectively changes the status bar style !
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 /**
  References to any data being displayed (not the data itself)
  For a container view controller, references to its child view controllers
