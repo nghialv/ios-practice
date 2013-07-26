@@ -188,6 +188,9 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
     
     //application.statusBarStyle = UIStatusBarStyleLightContent;
     
+    application.networkActivityIndicatorVisible = YES;
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
