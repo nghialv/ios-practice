@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="13A524d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="13A524d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="iQq-xE-18N">
     <dependencies>
         <development version="5000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Main-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController restorationIdentifier="restoreGAViewController" storyboardIdentifier="myGAViewController" id="vXZ-lx-hvc" customClass="GAViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="restoreGAViewController" storyboardIdentifier="myGAViewController" title="Main" id="vXZ-lx-hvc" customClass="GAViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LD3-ez-s5m"/>
                         <viewControllerLayoutGuide type="bottom" id="asn-0B-9Kp"/>
@@ -30,18 +30,75 @@
                                 </state>
                                 <connections>
                                     <action selector="onClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OQV-eJ-Xfh"/>
+                                    <segue destination="s5u-a2-gBp" kind="push" identifier="showDetail" id="AsQ-8p-sZx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OY3-aR-Pm8"/>
                     <connections>
                         <outlet property="clickBtn" destination="NIW-E0-8WG" id="9lv-fL-NWO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-229" y="-130"/>
+            <point key="canvasLocation" x="-97" y="-145"/>
+        </scene>
+        <!--Detail View Controller - Detail-->
+        <scene sceneID="p0g-PI-4lj">
+            <objects>
+                <viewController restorationIdentifier="restoreDetailViewController" storyboardIdentifier="idDetailViewController" title="Detail" id="s5u-a2-gBp" customClass="GADetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWA-hL-iQe"/>
+                        <viewControllerLayoutGuide type="bottom" id="NiP-1f-uNP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nqk-DF-1XB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoU-0X-HYT">
+                                <rect key="frame" x="130" y="274" width="60" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Sys-pX-c5M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="PoU-0X-HYT" secondAttribute="centerY" constant="0.5" id="FLP-iR-phM"/>
+                            <constraint firstItem="PoU-0X-HYT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nqk-DF-1XB" secondAttribute="leading" constant="20" symbolic="YES" id="NH1-DV-5yd"/>
+                            <constraint firstAttribute="centerX" secondItem="PoU-0X-HYT" secondAttribute="centerX" id="Q6x-SY-46H"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PoU-0X-HYT" secondAttribute="trailing" constant="20" symbolic="YES" id="otv-4a-3xH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="heC-8Z-SHN"/>
+                    <connections>
+                        <outlet property="txtLbl" destination="PoU-0X-HYT" id="IoI-5O-fz7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLB-om-fvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421" y="-137"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pmd-Ek-TSW">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="iQq-xE-18N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LM6-It-qEQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="YHH-IK-RGd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbY-UE-2tV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504" y="-145"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
