@@ -7,6 +7,7 @@
 //
 
 #import "GAViewController.h"
+#import "GADetailViewController.h"
 
 @interface GAViewController () <UIViewControllerRestoration>{
     NSInteger _myNumber;
@@ -16,14 +17,25 @@
 
 @implementation GAViewController
 
+#pragma mark - Transition
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"showDetail"]){
+        NSLog(@"pass in some detail");
+        GADetailViewController* controller = (GADetailViewController*)segue.destinationViewController;
+        NSAssert([controller isKindOfClass:[GADetailViewController class]], @"invalid class");
+        controller.txt = @"Hello World"; //don't attemp to access its ui cuz it may not be loaded yet 
+    }
+}
+
 #pragma mark - Life Cycle
 
 - (IBAction)onClicked:(id)sender {
     NSLog(@"on clicked");
     
-    //communitate with another app via URL scheme
-    NSURL *myURL = [NSURL URLWithString:@"http://dennycd.me"];
-    [[UIApplication sharedApplication] openURL:myURL];
+//    //communitate with another app via URL scheme
+//    NSURL *myURL = [NSURL URLWithString:@"http://dennycd.me"];
+//    [[UIApplication sharedApplication] openURL:myURL];
     
 }
 
@@ -31,6 +43,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationItem.title = @"Main";
 }
 
 - (void)didReceiveMemoryWarning
