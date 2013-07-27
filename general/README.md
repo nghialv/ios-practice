@@ -55,5 +55,22 @@
 * Choose a status bar content color that coordinates with your app.
 * When appropriate, display the network activity indicator.
 
+### Navigation
+
+* Consider putting a segmented control in a navigation bar at the top level of an app.
+
+### Bar Button Item
+for button used in toolbar and navigation bar 
+ *  UIBarButtonSystemItem
+ * UITabBarSystemItem
+
+### Template images
+ Follow these guidelines to create a template image that looks good in the activity view controller:
+
+ * Use black or white with appropriate alpha transparency
+ * Don’t include a drop shadow
+ * Use anti-aliasing
+
+
 ### Author 
 Denny C. Dai
