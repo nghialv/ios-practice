@@ -23,6 +23,7 @@
 		3E4675411799F6D900FDA35D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E46753F1799F6D900FDA35D /* InfoPlist.strings */; };
 		3E4675431799F6D900FDA35D /* GeneralAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4675421799F6D900FDA35D /* GeneralAppTests.m */; };
 		3E46754E1799F81F00FDA35D /* GAUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E46754D1799F81F00FDA35D /* GAUIApplication.m */; };
+		3E51510817A31A330086A077 /* GASecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E51510717A31A330086A077 /* GASecondaryViewController.m */; };
 		3E58ADB217A1FCAF0031883C /* GADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E58ADB117A1FCAF0031883C /* GADetailViewController.m */; };
 		3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE11799FD5F0066FECA /* GAView.m */; };
 		3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE41799FD6F0066FECA /* GALayer.m */; };
@@ -67,6 +68,8 @@
 		3E4675421799F6D900FDA35D /* GeneralAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralAppTests.m; sourceTree = "<group>"; };
 		3E46754C1799F81F00FDA35D /* GAUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAUIApplication.h; sourceTree = "<group>"; };
 		3E46754D1799F81F00FDA35D /* GAUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAUIApplication.m; sourceTree = "<group>"; };
+		3E51510617A31A330086A077 /* GASecondaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASecondaryViewController.h; sourceTree = "<group>"; };
+		3E51510717A31A330086A077 /* GASecondaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASecondaryViewController.m; sourceTree = "<group>"; };
 		3E58ADB017A1FCAF0031883C /* GADetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADetailViewController.h; sourceTree = "<group>"; };
 		3E58ADB117A1FCAF0031883C /* GADetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADetailViewController.m; sourceTree = "<group>"; };
 		3EE3ABE01799FD5F0066FECA /* GAView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAView.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				3E46752D1799F6D900FDA35D /* GAViewController.m */,
 				3E58ADB017A1FCAF0031883C /* GADetailViewController.h */,
 				3E58ADB117A1FCAF0031883C /* GADetailViewController.m */,
+				3E51510617A31A330086A077 /* GASecondaryViewController.h */,
+				3E51510717A31A330086A077 /* GASecondaryViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				3EF00C48179F329C0072BF92 /* GABackgroundTask.m in Sources */,
 				3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */,
 				3EE3ABEE179BA7B00066FECA /* GAObject.m in Sources */,
+				3E51510817A31A330086A077 /* GASecondaryViewController.m in Sources */,
 				3E4675241799F6D900FDA35D /* main.m in Sources */,
 				3E0CF7A617A0942A00792F3A /* GASysConfig.m in Sources */,
 				3E58ADB217A1FCAF0031883C /* GADetailViewController.m in Sources */,
