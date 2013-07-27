@@ -55,4 +55,9 @@
 }
 
 
+-(void)tintColorDidChange
+{
+    NSLog(@"tintColorDidChange");
+}
+
 @end
