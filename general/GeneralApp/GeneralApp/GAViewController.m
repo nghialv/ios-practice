@@ -44,7 +44,18 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    self.navigationItem.title = @"Main";
+    self.navigationItem.title = self.title;
+    
+    /**
+     In iOS 6, tintColor tinted the background of navigation bars, tab bars, toolbars, search bars, and scope bars. To tint a bar background in iOS 7, use the barTintColor property instead.
+     **/
+    
+    //[self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+    
+    
+    self.edgesForExtendedLayout = UIRectEdgeAll;
+    self.extendedLayoutIncludesOpaqueBars = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning

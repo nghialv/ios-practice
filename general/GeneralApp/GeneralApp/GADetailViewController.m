@@ -14,6 +14,13 @@
 
 @implementation GADetailViewController
 
+//this effectively changes the status bar style !
+-(UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+
 
 -(void)awakeFromNib
 {
@@ -29,6 +36,12 @@
     return self;
 }
 
+/**
+ When the user navigates to a new level, two things should happen: 
+ The bar title should change to the new level’s title, if appropriate.
+ A back button should appear to the left of the title, and it should be labeled with the previous level’s title.
+
+ **/
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,6 +49,8 @@
     
     NSLog(@"GADetailViewController::viewDidLoad");
     
+    
+    self.navigationItem.title = self.title;
     
     [self.txtLbl setText:self.txt];
 }
