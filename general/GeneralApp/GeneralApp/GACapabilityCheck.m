@@ -13,6 +13,20 @@
 //Any app that supports a range of iOS versions must use runtime checks to prevent the use of newer
 //APIs on older versions of iOS that do not support them.
 
++(NSString *)deviceSystemVersion
+{
+    return [[UIDevice currentDevice] systemVersion];
+}
+
++(NSUInteger)deviceSystemMajorVersion
+{
+    static NSUInteger _deviceSystemMajorVersion = -1;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _deviceSystemMajorVersion = [[[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."] objectAtIndex:0] intValue];
+    });
+    return _deviceSystemMajorVersion;
+}
 
 //Apps that link against iOS SDK 4.1 and earlier must use the NSClassFromString function to see whether a class is defined
 +(BOOL)isClassExist:(NSString *)cls

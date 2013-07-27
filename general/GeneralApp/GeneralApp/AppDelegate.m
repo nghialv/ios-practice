@@ -191,6 +191,13 @@ Your application:willFinishLaunchingWithOptions: and application:didFinishLaunch
     application.networkActivityIndicatorVisible = YES;
     
     
+    //check system version
+    NSLog(@"iOS Version %@. Marjor %d", [GACapabilityCheck deviceSystemVersion], [GACapabilityCheck deviceSystemMajorVersion]);
+    NSLog(@"device run iOS %@", DEVICE_RUN_IOS_SEVEN ? @"7" : @"earlier");
+    
+    
+    self.window.tintColor = [UIColor blueColor];
+    
     // Override point for customization after application launch.
     return YES;
 }
