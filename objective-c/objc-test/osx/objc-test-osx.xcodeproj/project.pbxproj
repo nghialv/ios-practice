@@ -47,7 +47,7 @@
 		3E93A427178DC85F00D5C60C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E93A42A178DC85F00D5C60C /* objc-test-osx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-test-osx-Prefix.pch"; sourceTree = "<group>"; };
 		3E93A42B178DC85F00D5C60C /* objc_test_osx.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = objc_test_osx.1; sourceTree = "<group>"; };
-		3E93A436178DC8B400D5C60C /* objc-test-osx Tests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = "objc-test-osx Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E93A436178DC8B400D5C60C /* objc-test-osx Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "objc-test-osx Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E93A437178DC8B400D5C60C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E93A43B178DC8B400D5C60C /* objc-test-osx Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "objc-test-osx Tests-Info.plist"; sourceTree = "<group>"; };
 		3E93A43D178DC8B400D5C60C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
