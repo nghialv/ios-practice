@@ -7,12 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import "TestObject.h"
+
 @import iAd;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    TestObject *obj = [[TestObject alloc] initWithName:@"dennycd"];
+    
+    //messaging a object
+    //target is obj, message is foo
+    [obj foo];
+    
+    //messagin a class
+    [TestObject bar];
+    
+    
+    //dot syntax
+    obj.value = 13;  //[obj setValue:13]
+    NSLog(@"%d", obj.value); //[obj value]
+    
+    
+    //declare a var that is an object conforming to a protoocl
+    id<MyProtocol> myobj = obj;
+    [myobj myFunc];
     
     
     // Override point for customization after application launch.

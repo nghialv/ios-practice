@@ -53,8 +53,8 @@
 		3E93A43D178DC8B400D5C60C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = objc_test_osx_Tests.mm; sourceTree = "<group>"; };
 		3E93A441178DC8B400D5C60C /* objc-test-osx Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-test-osx Tests-Prefix.pch"; sourceTree = "<group>"; };
-		3E93A447178DC9C900D5C60C /* myObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myObject.h; sourceTree = "<group>"; };
-		3E93A448178DC9C900D5C60C /* myObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = myObject.mm; sourceTree = "<group>"; };
+		3E93A447178DC9C900D5C60C /* myObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myObject.h; path = "objc-test-osx Tests/myObject.h"; sourceTree = "<group>"; };
+		3E93A448178DC9C900D5C60C /* myObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = myObject.mm; path = "objc-test-osx Tests/myObject.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +80,7 @@
 		3E93A418178DC85F00D5C60C = {
 			isa = PBXGroup;
 			children = (
+				3EAC673F17B2FD250045138D /* src */,
 				3E93A426178DC85F00D5C60C /* objc-test-osx */,
 				3E93A439178DC8B400D5C60C /* objc-test-osx Tests */,
 				3E93A423178DC85F00D5C60C /* Frameworks */,
@@ -126,8 +127,6 @@
 		3E93A439178DC8B400D5C60C /* objc-test-osx Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3E93A447178DC9C900D5C60C /* myObject.h */,
-				3E93A448178DC9C900D5C60C /* myObject.mm */,
 				3E93A43F178DC8B400D5C60C /* objc_test_osx_Tests.mm */,
 				3E44451B178E165B008EE2EB /* llvm_lang_test.mm */,
 				3E93A43A178DC8B400D5C60C /* Supporting Files */,
@@ -143,6 +142,15 @@
 				3E93A441178DC8B400D5C60C /* objc-test-osx Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EAC673F17B2FD250045138D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3E93A447178DC9C900D5C60C /* myObject.h */,
+				3E93A448178DC9C900D5C60C /* myObject.mm */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
