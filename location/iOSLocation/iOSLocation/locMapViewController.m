@@ -16,6 +16,11 @@
 
 @implementation locMapViewController
 
+-(void)awakeFromNib
+{
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,6 +28,11 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    
 }
 
 - (void)viewDidLoad
