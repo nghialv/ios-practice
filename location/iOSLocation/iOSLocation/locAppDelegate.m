@@ -7,11 +7,25 @@
 //
 
 #import "locAppDelegate.h"
+#import <CoreLocation/CoreLocation.h>
+
+
 
 @implementation locAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //The framework uses information obtained from the built-in cellular, Wi-Fi, or GPS hardware to triangulate a location fix for the device
+    //detect if location service is enabled
+    NSLog(@"location service: %@", [CLLocationManager locationServicesEnabled] ? @"enabled" : @"disabled");
+
+    //check if device supports region monitoring
+    //NSLog(@"region monitor service: %@", [CLLocationManager ]);
+    NSLog(@"%d", [CLLocationManager authorizationStatus]);
+    
+    //check heading availability
+    NSLog(@"heading avaialbe: %@", [CLLocationManager headingAvailable] ? @"avaiable" : @"not available");
+    
     // Override point for customization after application launch.
     return YES;
 }
