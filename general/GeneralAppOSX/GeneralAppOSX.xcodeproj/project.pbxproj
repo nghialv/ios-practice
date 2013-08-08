@@ -49,7 +49,7 @@
 		3EE3ABBD1799FB300066FECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3EE3ABC01799FB300066FECA /* GADocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GADocument.xcdatamodel; sourceTree = "<group>"; };
 		3EE3ABC21799FB300066FECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3EE3ABC81799FB300066FECA /* GeneralAppOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = GeneralAppOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE3ABC81799FB300066FECA /* GeneralAppOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralAppOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE3ABC91799FB300066FECA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3EE3ABD01799FB300066FECA /* GeneralAppOSXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeneralAppOSXTests-Info.plist"; sourceTree = "<group>"; };
 		3EE3ABD21799FB300066FECA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -483,6 +483,7 @@
 				3EE3ABDA1799FB300066FECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EE3ABDB1799FB300066FECA /* Build configuration list for PBXNativeTarget "GeneralAppOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +492,7 @@
 				3EE3ABDD1799FB300066FECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
