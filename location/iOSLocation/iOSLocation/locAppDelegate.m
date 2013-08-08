@@ -8,10 +8,25 @@
 
 #import "locAppDelegate.h"
 #import <CoreLocation/CoreLocation.h>
-
+#import <MapKit/MapKit.h>
 
 
 @implementation locAppDelegate
+
+//Handling Direction Requests
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if ([MKDirectionsRequest isDirectionsRequestURL:url]) {
+        MKDirectionsRequest* directionsInfo = [[MKDirectionsRequest alloc] initWithContentsOfURL:url];
+        // TO DO: Plot and display the route using the
+        //   source and destination properties of directionsInfo.
+        return YES;
+    }
+    else {
+        // Handle other URL types...
+    }
+    return NO;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
