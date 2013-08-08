@@ -355,7 +355,10 @@ NSLog(@"%@", _obj);
     NSDictionary* dict;
     dict = @{};
     dict = @{@"key" : num};
-    dict = @{ @"key1" : num, @"key2" : myStr };
+    
+    dict = @{ @"key1" : num,
+              @"key2" : myStr
+            };
     
     
     //object liternal are immutable
@@ -390,8 +393,24 @@ NSLog(@"%@", _obj);
 }
 
 
+-(void)testEnumerator{
+    NSArray* arr = @[@"dennycd", @(1), @"chendai"];
+    
+    //fast enum. the collection object must conforms to NSFastEnumeration protocol
+    for(id elem in arr) NSLog(@"%@",elem);
+    
+    
+    NSEnumerator* it = [arr reverseObjectEnumerator];
+    id obj;
+    while (obj = [it nextObject]) {
+        NSLog(@"%@", obj);
+    }
+}
 
 
+-(void)testBlock{
+    
+}
 
 
 @end
