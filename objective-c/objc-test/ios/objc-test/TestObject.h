@@ -115,7 +115,10 @@
 -(void)foo; //instance method
 +(void)bar; //class method
 
-
+//Objects Use Properties to Keep Track of Blocks
+//You should specify copy as the property attribute,
+//because a block needs to be copied to keep track of its captured state outside of the original scope
+@property (copy) void (^blockProperty)(void);
 
 +(TestObject*)newObject; // a factory class method
 
