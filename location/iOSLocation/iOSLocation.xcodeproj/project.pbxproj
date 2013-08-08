@@ -85,6 +85,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E0A54BA17B4438800D9814B /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		3EA08D0D17B4228F00F35D2C = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +127,7 @@
 		3EA08D1F17B4228F00F35D2C /* iOSLocation */ = {
 			isa = PBXGroup;
 			children = (
+				3E0A54BA17B4438800D9814B /* iPad */,
 				3EA08D2817B4228F00F35D2C /* locAppDelegate.h */,
 				3EA08D2917B4228F00F35D2C /* locAppDelegate.m */,
 				3EA08D2B17B4228F00F35D2C /* Main.storyboard */,
@@ -390,7 +398,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSLocation/iOSLocation-Prefix.pch";
 				INFOPLIST_FILE = "iOSLocation/iOSLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,7 +414,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSLocation/iOSLocation-Prefix.pch";
 				INFOPLIST_FILE = "iOSLocation/iOSLocation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -468,6 +480,7 @@
 				3EA08D4A17B4228F00F35D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EA08D4B17B4228F00F35D2C /* Build configuration list for PBXNativeTarget "iOSLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +489,7 @@
 				3EA08D4D17B4228F00F35D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
