@@ -407,10 +407,112 @@ NSLog(@"%@", _obj);
     }
 }
 
-
+/**
+ Blocks are a language-level feature added to C, Objective-C and C++, which allow you to create distinct segments of code that can be passed around to methods or functions as if they were values. 
+ 
+ Blocks are Objective-C objects, which means they can be added to collections like NSArray or NSDictionary. They also have the ability to capture values from the enclosing scope, making them similar to closures or lambdas in other programming languages.
+ 
+ **/
 -(void)testBlock{
+ 
+    //a block variable
+    void (^simpleBlock)(void);
+    double (^multiplyTwoValues)(double, double); //takes two arg and returns a val
+    
+    //typdef a block variable type
+    typedef void(^SimpleBlock)(void);
+    typedef double(^MultiplyTwoValues)(double,double);
+    
+    //declare a block var
+    //a block literal and assign it to a block variable
+    SimpleBlock blk = ^{
+        NSLog(@"block code");
+    };
+
+    //block invocation
+    blk();
+    
+    MultiplyTwoValues blk2 = ^double(double val1, double val2){
+        NSLog(@"%f, %f", val1, val2);
+        return val1+val2;
+    };
+    blk2(12.2f,2.32f);
+    
+
+    
+    //Use __block Variables to Share Storage
+    // This means that the variable lives in storage that is shared between the
+    //lexical scope of the original variable and any blocks declared within that scope.
+    {
+        __block int anInteger = 42;
+        
+        void (^testBlock)(void) = ^{
+            NSLog(@"Integer is: %i", anInteger);
+        };
+        
+        anInteger = 84;
+        
+        testBlock(); //84
+    }
+    
+    
+    NSArray* arr = @[@"denny", @"chen", @"dai"];
+    [arr enumerateObjectsWithOptions:NSEnumerationConcurrent usingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSLog(@"%ld: %@", idx, obj);
+    }];
     
 }
 
 
+-(void)testOperationQueue{
+    NSBlockOperation* operation = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"some block operation");
+    }];
+    
+    // schedule task on main queue:
+    NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
+    [mainQueue addOperation:operation];
+    
+    // schedule task on background queue:
+//    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+//    [queue addOperation:operation];
+    
+}
+
+
+-(void)testError{
+    
+    //In order to create your own NSError objects you’ll need to define your own error domain
+    NSString *domain = @"com.MyCompany.MyApplication.ErrorDomain";
+    
+    //You’ll also need to pick a unique error code for each error that may occur in your domain, along with a suitable description, which is stored in the user info dictionary for the error, like this:
+    NSString *desc = NSLocalizedString(@"Unable to…", @"");
+    NSDictionary *userInfo = @{ NSLocalizedDescriptionKey : desc };
+    
+    NSError *error = [NSError errorWithDomain:domain
+                                         code:-101
+                                     userInfo:userInfo];
+    NSLog(@"%@", error);
+}
+
+//Exceptions Are Used for Programmer Errors
+//NSException
+//you should avoid throwing exceptions in an app that you ship to users.
+-(void)testException{
+    @try {
+        @throw [NSException exceptionWithName:@"DummyException" reason:@"no reason" userInfo:nil];
+    }
+    @catch (NSException *exception) {
+        NSLog(@"catching exp: %@", exception);
+    }
+    @finally {
+        NSLog(@"finalizing code");
+    }
+}
+
 @end
+
+
+
+
+
