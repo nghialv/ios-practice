@@ -67,6 +67,18 @@
 
 
 //A protocol declares methods that can be implemented by any class. Protocols are not classes themselves. They simply define an interface that other objects are responsible for implementing. When you implement the methods of a protocol in one of your classes, your class is said to conform to that protocol.
+
+//protocol inherits from NSObject protocol
+
+//Some protocols are used to indicate non-hierarchical similarities between classes.
+
+/**
+ A few Objective-C language-level features also rely on protocols. In order to use fast enumeration, for example, a collection must adopt the NSFastEnumeration protocol, as described in “Fast Enumeration Makes It Easy to Enumerate a Collection.” Additionally, some objects can be copied, such as when using a property with a copy attribute as described in “Copy Properties Maintain Their Own Copies.” Any object you try to copy must adopt the NSCopying protocol, otherwise you’ll get a runtime exception.
+ **/
+
+//Protocols Are Used for Anonymity
+//Protocols are also useful in situations where the class of an object isn’t known, or needs to stay hidden.
+
 @protocol MyProtocol <NSObject>
 @required
 -(void)myFunc;
@@ -112,7 +124,9 @@
 -(void)setValue:(NSInteger)val;
 
 
-@property(weak) id delegate; //weak reference delete
+@property(weak) id<MyProtocol> delegate; //weak reference delete
+
+@property int counter; //a scalar type //atomic, readwrite, no ARC , always value copy 
 @end
 
 
