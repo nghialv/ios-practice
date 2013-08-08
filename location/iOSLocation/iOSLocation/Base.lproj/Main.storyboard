@@ -63,8 +63,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-0k-G9H">
+                                <rect key="frame" x="238" y="518" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Direction">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onDirectionClicked:" destination="Zzc-ts-JSL" eventType="touchUpInside" id="EYb-Pe-RvS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AbH-0k-G9H" secondAttribute="trailing" constant="20" id="Dga-2z-Pkx"/>
+                            <constraint firstItem="hog-en-r82" firstAttribute="top" secondItem="AbH-0k-G9H" secondAttribute="bottom" constant="20" id="tuX-N2-Mjb"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="0tV-0G-chV" id="r4f-VQ-QXP"/>
