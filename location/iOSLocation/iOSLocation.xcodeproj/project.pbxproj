@@ -23,6 +23,7 @@
 		3EA08D4517B4228F00F35D2C /* iOSLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA08D4417B4228F00F35D2C /* iOSLocationTests.m */; };
 		3EA08D4F17B422A700F35D2C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA08D4E17B422A700F35D2C /* CoreLocation.framework */; };
 		3EA08D5217B424E100F35D2C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA08D5117B424E100F35D2C /* MapKit.framework */; };
+		3EEC2E2A17B44D4F006C72B4 /* locMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC2E2917B44D4F006C72B4 /* locMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		3EA08D4417B4228F00F35D2C /* iOSLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSLocationTests.m; sourceTree = "<group>"; };
 		3EA08D4E17B422A700F35D2C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3EA08D5117B424E100F35D2C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3EEC2E2817B44D4F006C72B4 /* locMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locMapViewController.h; sourceTree = "<group>"; };
+		3EEC2E2917B44D4F006C72B4 /* locMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				3EA08D2B17B4228F00F35D2C /* Main.storyboard */,
 				3EA08D2E17B4228F00F35D2C /* locViewController.h */,
 				3EA08D2F17B4228F00F35D2C /* locViewController.m */,
+				3EEC2E2817B44D4F006C72B4 /* locMapViewController.h */,
+				3EEC2E2917B44D4F006C72B4 /* locMapViewController.m */,
 				3EA08D3117B4228F00F35D2C /* Images.xcassets */,
 				3EA08D2017B4228F00F35D2C /* Supporting Files */,
 			);
@@ -269,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEC2E2A17B44D4F006C72B4 /* locMapViewController.m in Sources */,
 				3EA08D2617B4228F00F35D2C /* main.m in Sources */,
 				3EA08D2A17B4228F00F35D2C /* locAppDelegate.m in Sources */,
 				3EA08D3017B4228F00F35D2C /* locViewController.m in Sources */,
