@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TestObject.h"
+#import "TestSubObject.h"
 
 @import iAd;
 
@@ -15,6 +16,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /**
+      Object allocation and initialization 
+     **/
+    //alloc is defined on NSObject as a class method, it allocates space for the entire concrete object
+    //init then populates the object with values
     TestObject *obj = [[TestObject alloc] initWithName:@"dennycd"];
     
     //messaging a object
@@ -34,6 +40,38 @@
     id<MyProtocol> myobj = obj;
     [myobj myFunc];
     
+    
+    //Some classes define objects that are immutable.
+    NSString* myname = @"dennycd"; //immutable
+    NSMutableString* mynamemut = @"dennycd";
+    
+    
+    {
+        TestSubObject* myobj = [[TestSubObject alloc] init];
+        [myobj foo];
+    }
+    
+    
+    //Use new to Create an Object If No Arguments Are Needed for Initialization
+    {
+        //equivalet to [TestObject alloc] init];
+        TestObject* obj2 = [TestObject new];
+        
+    }
+    
+    
+    //Literals Offer a Concise Object-Creation Syntax
+    {
+        NSString* myStr = @"dennycd";
+        NSNumber *myBOOL = @YES;
+        NSNumber *myFloat = @3.14f;
+        NSNumber *myInt = @42;
+        NSNumber *myLong = @42L;
+        
+        //number with boxed expression
+        //In this case, the expression is evaluated, and an NSNumber instance created with the result.
+         NSNumber *myInt = @(84 / 2);
+    }
     
     // Override point for customization after application launch.
     return YES;

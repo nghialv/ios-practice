@@ -27,6 +27,11 @@
 
 #pragma mark  -
 
++(TestObject *)newObject
+{
+    return [[TestObject alloc] init];
+}
+
 -(NSInteger)value
 {
     return _value;
@@ -43,7 +48,7 @@
  When you want to call a method, you do so by messaging an object. A message is the method signature, along with the parameter information the method needs. All messages you send to an object are dispatched dynamically, thus facilitating the polymorphic behavior of Objective-C classes.
  **/
 -(void)foo{
-    NSLog(@"foo");
+    NSLog(@"TestObject::foo");
 }
 
 
@@ -52,9 +57,29 @@
     NSLog(@"bar");
 }
 
+-(id)initWithValue:(NSInteger)val
+{
+    if(self = [super init]){
+        _name = @"";
+        _value = val;
+    }
+    return self;
+}
+
 -(instancetype)initWithName:(NSString*)name{
     if(self = [super init]){
         _name = name;
+        _value = 11;
+    }
+    return self;
+}
+
+
+//called if invoking [TestObject new]
+-(id)init{
+    NSLog(@"TestObject::init");
+    if(self = [super init]){
+        _name = @"";
         _value = 11;
     }
     return self;

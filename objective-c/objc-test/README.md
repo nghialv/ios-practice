@@ -1,7 +1,11 @@
 ## ObjC Language Practice Project
 
+### Developer Doc Reference
 
-### Reference 
+* Programming with Objective-C
+* Learning Objective-C: A Primer
+
+### WWDC Reference
 
 * WWDC 2013 # 404 - Advances in Objective-C
 * WWDC 2012 # 405 - Modern Objective-C
