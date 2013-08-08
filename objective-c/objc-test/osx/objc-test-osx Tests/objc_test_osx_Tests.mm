@@ -510,6 +510,18 @@ NSLog(@"%@", _obj);
     }
 }
 
+//Class Names Must Be Unique Across an Entire App
+//Your own classes should use three letter prefixes.
+//You should also name your classes using a noun that makes it clear what the class represents,
+//If multiple words are needed in a class name, you should use camel case by capitalizing the first letter of each subsequent word.
+//If a method returns a value, for example, the first word normally indicates what will be returned
+//If a method includes an error pointer parameter to be set if an error occurred, this should be the last parameter to the method. If a method takes a block, the block parameter should be the last parameter in order to make any method invocations as readable as possible when specifying a block inline.
+
+//Class factory methods should always start with the name of the class (without the prefix) that they create, with the exception of subclasses of classes with existing factory methods. In the case of the NSArray class, for example, the factory methods start with array. The NSMutableArray class doesn’t define any of its own class-specific factory methods, so the factory methods for a mutable array still begin with array.
+
+//the compiler judges which rule it should follow based on the name of the creation method. Objects created via factory methods are managed slightly differently from objects that are created through traditional allocation and initialization or new because of the use of autorelease pool blocks.
+
+
 @end
 
 
