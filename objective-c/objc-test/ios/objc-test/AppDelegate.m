@@ -48,7 +48,7 @@
     
     //Some classes define objects that are immutable.
     NSString* myname = @"dennycd"; //immutable
-    //NSMutableString* mynamemut = @"dennycd";
+    NSMutableString* mynamemut = [NSMutableString stringWithString:@"dennycd"];
     
     
     {
