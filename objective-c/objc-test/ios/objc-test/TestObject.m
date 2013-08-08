@@ -9,10 +9,11 @@
 #import "TestObject.h"
 
 @interface TestObject(){
+    //hidden instance variables
+    
     id _ivar1;  //instance variables a.k.a ivars
     id _ivar2;  //weak typing
     NSString* myname; //strong typing with explicit class name
-    
     NSInteger _value;
 }
 @end
@@ -74,12 +75,18 @@
     return self;
 }
 
-
+/**
+ 
+ You should always access the instance variables directly from within an initialization method because at the time a property is set, the rest of the object may not yet be completely initialized. Even if you don’t provide custom accessor methods or know of any side effects from within your own class, a future subclass may very well override the behavior.
+ 
+ If an object declares one or more initialization methods, you should decide which method is the designated initializer. This is often the method that offers the most options for initialization (such as the method with the most arguments), and is called by other methods you write for convenience **/
 //called if invoking [TestObject new]
 -(id)init{
     NSLog(@"TestObject::init");
     if(self = [super init]){
-        _name = @"";
+        
+        //Access Instance Variables Directly from Initializer Methods
+        _name = @""; //the auto-synthesized ivar from property <name>
         _value = 11;
     }
     return self;

@@ -20,6 +20,8 @@
         //DO NOT use accessor method in init
         _name = name;  //name retained name as it is strong ref
         
+        _value = [name copy]; //make the copy during initialization
+        
     }
     return self;
 }

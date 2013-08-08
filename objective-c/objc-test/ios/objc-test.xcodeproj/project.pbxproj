@@ -61,7 +61,7 @@
 		3E80E70917822CA5000242ED /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TestObject.m; path = "objc-test/TestObject.m"; sourceTree = "<group>"; };
 		3EED201E17B317B60039D681 /* NSObject+TestObjectEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+TestObjectEx.h"; path = "objc-test/NSObject+TestObjectEx.h"; sourceTree = "<group>"; };
 		3EED201F17B317B60039D681 /* NSObject+TestObjectEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TestObjectEx.m"; path = "objc-test/NSObject+TestObjectEx.m"; sourceTree = "<group>"; };
-		3EED202117B317FD0039D681 /* NSObject_TestObjectExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_TestObjectExt.h; sourceTree = "<group>"; };
+		3EED202117B317FD0039D681 /* TestSubObjectEx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSubObjectEx.h; sourceTree = "<group>"; };
 		3EED202217B3206A0039D681 /* TestSubObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSubObject.h; sourceTree = "<group>"; };
 		3EED202317B3206A0039D681 /* TestSubObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSubObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,9 +171,9 @@
 				3E80E70917822CA5000242ED /* TestObject.m */,
 				3EED202217B3206A0039D681 /* TestSubObject.h */,
 				3EED202317B3206A0039D681 /* TestSubObject.m */,
+				3EED202117B317FD0039D681 /* TestSubObjectEx.h */,
 				3EED201E17B317B60039D681 /* NSObject+TestObjectEx.h */,
 				3EED201F17B317B60039D681 /* NSObject+TestObjectEx.m */,
-				3EED202117B317FD0039D681 /* NSObject_TestObjectExt.h */,
 			);
 			name = src;
 			sourceTree = "<group>";

@@ -309,15 +309,28 @@ NSLog(@"%@", _obj);
         //when out of scope, local object gets reference count to zero, deallocated
     }
     
-    //not nessarily true, as it might not get deallocated yet
+    //local obj get deallocated
     XCTAssert(weakObj==nil, @"a local obj is deallocated, reflected as nil in weak var");
 
+    
+    //
+    NSObject * __weak someObject = [[NSObject alloc] init];
+    XCTAssert(someObject==nil, @"");
     
     //when out of scope,
     // current value is implicitly releases
     NSLog(@"done");
 }
 
+/**
+ An unsafe reference is similar to a weak reference in that it doesn’t keep its related object alive, but it won’t be set to nil if the destination object is deallocated. This means that you’ll be left with a dangling pointer to the memory originally occupied by the now deallocated object, hence the term “unsafe.” Sending a message to a dangling pointer will result in a crash.
+ **/
+-(void)testUnsafeUnretained
+{
+    //on property @property (unsafe_unretained) NSObject *unsafeProperty;
+    
+    NSObject * __unsafe_unretained unsafeReference; // a local var
+}
 
 -(void)testObjectLiteral{
     

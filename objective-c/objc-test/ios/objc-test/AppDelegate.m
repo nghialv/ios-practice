@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TestObject.h"
 #import "TestSubObject.h"
+#import "TestSubObjectEx.h"
 
 @import iAd;
 
@@ -16,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    TestSubObject* subojc = [[TestSubObject alloc] init];
+    subojc.extraName = @"dennycd";
+    
+    
     /**
       Object allocation and initialization 
      **/
@@ -43,7 +48,7 @@
     
     //Some classes define objects that are immutable.
     NSString* myname = @"dennycd"; //immutable
-    NSMutableString* mynamemut = @"dennycd";
+    //NSMutableString* mynamemut = @"dennycd";
     
     
     {
@@ -70,8 +75,22 @@
         
         //number with boxed expression
         //In this case, the expression is evaluated, and an NSNumber instance created with the result.
-         NSNumber *myInt = @(84 / 2);
+         NSNumber *myInt1 = @(84 / 2);
     }
+    
+    //object equality
+    {
+        TestObject* obj1 = [[TestObject alloc]init];
+        TestObject* obj2 = obj1;
+        TestObject* obj3 = [TestObject new];
+        NSAssert(obj1 == obj2, @"error"); //two pointer points to the same object
+        
+        //not equal
+        NSLog(@"%@", ([obj1 isEqual:obj3] ? @"equal" : @"not equal"));
+    }
+    
+    //Note: If you expect a return value from a message sent to nil, the return value will be nil for object return types, 0 for numeric types, and NO for BOOL types.
+    
     
     // Override point for customization after application launch.
     return YES;
