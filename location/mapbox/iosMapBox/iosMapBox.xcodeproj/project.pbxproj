@@ -22,6 +22,11 @@
 		3EE2261317B5B46B009AFD49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EE2261117B5B46B009AFD49 /* InfoPlist.strings */; };
 		3EE2261517B5B46B009AFD49 /* iosMapBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2261417B5B46B009AFD49 /* iosMapBoxTests.m */; };
 		3EE2261F17B5B68C009AFD49 /* MapBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE2261E17B5B68C009AFD49 /* MapBox.framework */; };
+		3EE2262117B5B723009AFD49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE2262017B5B723009AFD49 /* CoreLocation.framework */; };
+		3EE2262317B5B728009AFD49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE2262217B5B728009AFD49 /* QuartzCore.framework */; };
+		3EE2262517B5B735009AFD49 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE2262417B5B735009AFD49 /* libsqlite3.0.dylib */; };
+		3EE2262717B5B73F009AFD49 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE2262617B5B73F009AFD49 /* libz.dylib */; };
+		3EE2262917B5B79B009AFD49 /* MapBox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EE2262817B5B79B009AFD49 /* MapBox.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		3EE2261217B5B46B009AFD49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EE2261417B5B46B009AFD49 /* iosMapBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosMapBoxTests.m; sourceTree = "<group>"; };
 		3EE2261E17B5B68C009AFD49 /* MapBox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapBox.framework; path = iosMapBox/MapBox.framework; sourceTree = "<group>"; };
+		3EE2262017B5B723009AFD49 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3EE2262217B5B728009AFD49 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3EE2262417B5B735009AFD49 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		3EE2262617B5B73F009AFD49 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3EE2262817B5B79B009AFD49 /* MapBox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapBox.bundle; path = MapBox.framework/Versions/A/Resources/MapBox.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE2262717B5B73F009AFD49 /* libz.dylib in Frameworks */,
+				3EE2262517B5B735009AFD49 /* libsqlite3.0.dylib in Frameworks */,
+				3EE2262317B5B728009AFD49 /* QuartzCore.framework in Frameworks */,
+				3EE2262117B5B723009AFD49 /* CoreLocation.framework in Frameworks */,
 				3EE2261F17B5B68C009AFD49 /* MapBox.framework in Frameworks */,
 				3EE225EC17B5B46A009AFD49 /* CoreGraphics.framework in Frameworks */,
 				3EE225EE17B5B46A009AFD49 /* UIKit.framework in Frameworks */,
@@ -104,6 +118,10 @@
 		3EE225E817B5B46A009AFD49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EE2262617B5B73F009AFD49 /* libz.dylib */,
+				3EE2262417B5B735009AFD49 /* libsqlite3.0.dylib */,
+				3EE2262217B5B728009AFD49 /* QuartzCore.framework */,
+				3EE2262017B5B723009AFD49 /* CoreLocation.framework */,
 				3EE2261E17B5B68C009AFD49 /* MapBox.framework */,
 				3EE225E917B5B46A009AFD49 /* Foundation.framework */,
 				3EE225EB17B5B46A009AFD49 /* CoreGraphics.framework */,
@@ -116,6 +134,7 @@
 		3EE225EF17B5B46A009AFD49 /* iosMapBox */ = {
 			isa = PBXGroup;
 			children = (
+				3EE2262817B5B79B009AFD49 /* MapBox.bundle */,
 				3EE225F817B5B46A009AFD49 /* mbAppDelegate.h */,
 				3EE225F917B5B46A009AFD49 /* mbAppDelegate.m */,
 				3EE225FB17B5B46A009AFD49 /* Main.storyboard */,
@@ -236,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE2262917B5B79B009AFD49 /* MapBox.bundle in Resources */,
 				3EE2260217B5B46A009AFD49 /* Images.xcassets in Resources */,
 				3EE225F417B5B46A009AFD49 /* InfoPlist.strings in Resources */,
 				3EE225FD17B5B46A009AFD49 /* Main.storyboard in Resources */,
@@ -390,6 +410,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosMapBox/iosMapBox-Prefix.pch";
 				INFOPLIST_FILE = "iosMapBox/iosMapBox-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iosMapBox/iosMapBox-Prefix.pch";
 				INFOPLIST_FILE = "iosMapBox/iosMapBox-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
