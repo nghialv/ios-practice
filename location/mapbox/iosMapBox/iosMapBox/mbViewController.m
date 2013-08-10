@@ -7,9 +7,10 @@
 //
 
 #import "mbViewController.h"
+#import <MapBox/MapBox.h>
 
 @interface mbViewController ()
-
+@property (weak, nonatomic) IBOutlet RMMapView *mapView;
 @end
 
 @implementation mbViewController
