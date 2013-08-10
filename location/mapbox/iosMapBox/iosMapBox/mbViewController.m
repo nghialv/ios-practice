@@ -9,11 +9,17 @@
 #import "mbViewController.h"
 #import <MapBox/MapBox.h>
 
-@interface mbViewController ()
+@interface mbViewController () <RMMapViewDelegate>
 @property (weak, nonatomic) IBOutlet RMMapView *mapView;
 @end
 
 @implementation mbViewController
+
+#pragma mark - RMMapViewDelegate
+
+
+
+#pragma mark - Life Cycle
 
 - (void)viewDidLoad
 {
