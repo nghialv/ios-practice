@@ -1,2 +1,4 @@
 .DS_Store
 **.xcuserstate
+**.APIKey.h
+location/google/testGMap/testGMap/APIKey.h

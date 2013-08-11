@@ -81,6 +81,7 @@
 		3E78DF7517B7596F0042038A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		3E78DF7717B759800042038A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3E78DF7A17B759C10042038A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		3E78DF7C17B75F1D0042038A /* APIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +175,7 @@
 				3E78DF3F17B755F40042038A /* gmViewController.m */,
 				3E78DF4117B755F40042038A /* Images.xcassets */,
 				3E78DF3017B755F40042038A /* Supporting Files */,
+				3E78DF7C17B75F1D0042038A /* APIKey.h */,
 			);
 			path = testGMap;
 			sourceTree = "<group>";
