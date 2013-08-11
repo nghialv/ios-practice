@@ -26,7 +26,7 @@
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:1.285
                                                             longitude:103.848
-                                                                 zoom:12];
+                                                                 zoom:5];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     self.view = mapView_;
 }
