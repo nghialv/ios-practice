@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testGMap/README.md">
+   </FileRef>
+   <FileRef
       location = "group:testGMap/testGMap.xcodeproj">
    </FileRef>
 </Workspace>
