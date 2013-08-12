@@ -2,5 +2,4 @@
 
 
 #### Reference 
-
-<https://developers.google.com/maps/documentation/ios/>
+https://developers.google.com/maps/documentation/ios/
