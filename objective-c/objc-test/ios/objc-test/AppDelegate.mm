@@ -10,13 +10,18 @@
 #import "TestObject.h"
 #import "TestSubObject.h"
 #import "TestSubObjectEx.h"
+#import "MyCppCls.h"
 
-@import iAd;
+
+//@import iAd;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    MyCppCls* obj2 = new MyCppCls(self);
+    delete obj2;
+    
     TestSubObject* subojc = [[TestSubObject alloc] init];
     subojc.extraName = @"dennycd";
     
