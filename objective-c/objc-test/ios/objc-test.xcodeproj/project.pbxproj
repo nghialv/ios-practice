@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E240F6617B9DC5300E1F0F6 /* MyCppCls.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E240F6417B9DC5300E1F0F6 /* MyCppCls.mm */; };
 		3E80E6D317822058000242ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D217822058000242ED /* Foundation.framework */; };
 		3E80E6D517822058000242ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D417822058000242ED /* CoreGraphics.framework */; };
 		3E80E6D717822058000242ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D617822058000242ED /* UIKit.framework */; };
 		3E80E6DD17822058000242ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E80E6DB17822058000242ED /* InfoPlist.strings */; };
 		3E80E6DF17822058000242ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6DE17822058000242ED /* main.m */; };
-		3E80E6E317822058000242ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6E217822058000242ED /* AppDelegate.m */; };
+		3E80E6E317822058000242ED /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6E217822058000242ED /* AppDelegate.mm */; };
 		3E80E6E617822058000242ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E80E6E417822058000242ED /* Main.storyboard */; };
 		3E80E6E917822058000242ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6E817822058000242ED /* ViewController.m */; };
 		3E80E6EB17822058000242ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E80E6EA17822058000242ED /* Images.xcassets */; };
@@ -20,7 +21,7 @@
 		3E80E6F317822058000242ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D217822058000242ED /* Foundation.framework */; };
 		3E80E6F417822058000242ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D617822058000242ED /* UIKit.framework */; };
 		3E80E6FC17822058000242ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E80E6FA17822058000242ED /* InfoPlist.strings */; };
-		3E80E6FE17822058000242ED /* objc_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6FD17822058000242ED /* objc_testTests.m */; };
+		3E80E6FE17822058000242ED /* objc_testTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E6FD17822058000242ED /* objc_testTests.mm */; };
 		3E80E70A17822D9E000242ED /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E70917822CA5000242ED /* TestObject.m */; };
 		3E80E70B17822DF9000242ED /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E80E70917822CA5000242ED /* TestObject.m */; };
 		3EED202017B317B60039D681 /* NSObject+TestObjectEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EED201F17B317B60039D681 /* NSObject+TestObjectEx.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E240F6417B9DC5300E1F0F6 /* MyCppCls.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCppCls.mm; sourceTree = "<group>"; };
+		3E240F6517B9DC5300E1F0F6 /* MyCppCls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCppCls.h; sourceTree = "<group>"; };
 		3E80E6CF17822058000242ED /* objc-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E80E6D217822058000242ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E80E6D417822058000242ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,7 +50,7 @@
 		3E80E6DE17822058000242ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E80E6E017822058000242ED /* objc-test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objc-test-Prefix.pch"; sourceTree = "<group>"; };
 		3E80E6E117822058000242ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3E80E6E217822058000242ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E80E6E217822058000242ED /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		3E80E6E517822058000242ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E80E6E717822058000242ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3E80E6E817822058000242ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -56,7 +59,7 @@
 		3E80E6F117822058000242ED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E80E6F917822058000242ED /* objc-testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "objc-testTests-Info.plist"; sourceTree = "<group>"; };
 		3E80E6FB17822058000242ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E80E6FD17822058000242ED /* objc_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_testTests.m; sourceTree = "<group>"; };
+		3E80E6FD17822058000242ED /* objc_testTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = objc_testTests.mm; sourceTree = "<group>"; };
 		3E80E70817822CA5000242ED /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestObject.h; path = "objc-test/TestObject.h"; sourceTree = "<group>"; };
 		3E80E70917822CA5000242ED /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TestObject.m; path = "objc-test/TestObject.m"; sourceTree = "<group>"; };
 		3EED201E17B317B60039D681 /* NSObject+TestObjectEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+TestObjectEx.h"; path = "objc-test/NSObject+TestObjectEx.h"; sourceTree = "<group>"; };
@@ -125,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3E80E6E117822058000242ED /* AppDelegate.h */,
-				3E80E6E217822058000242ED /* AppDelegate.m */,
+				3E80E6E217822058000242ED /* AppDelegate.mm */,
 				3E80E6E417822058000242ED /* Main.storyboard */,
 				3E80E6E717822058000242ED /* ViewController.h */,
 				3E80E6E817822058000242ED /* ViewController.m */,
@@ -149,7 +152,7 @@
 		3E80E6F717822058000242ED /* objc-testTests */ = {
 			isa = PBXGroup;
 			children = (
-				3E80E6FD17822058000242ED /* objc_testTests.m */,
+				3E80E6FD17822058000242ED /* objc_testTests.mm */,
 				3E80E6F817822058000242ED /* Supporting Files */,
 			);
 			path = "objc-testTests";
@@ -174,6 +177,8 @@
 				3EED202117B317FD0039D681 /* TestSubObjectEx.h */,
 				3EED201E17B317B60039D681 /* NSObject+TestObjectEx.h */,
 				3EED201F17B317B60039D681 /* NSObject+TestObjectEx.m */,
+				3E240F6517B9DC5300E1F0F6 /* MyCppCls.h */,
+				3E240F6417B9DC5300E1F0F6 /* MyCppCls.mm */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -280,9 +285,10 @@
 			files = (
 				3E80E70B17822DF9000242ED /* TestObject.m in Sources */,
 				3E80E6E917822058000242ED /* ViewController.m in Sources */,
-				3E80E6E317822058000242ED /* AppDelegate.m in Sources */,
+				3E80E6E317822058000242ED /* AppDelegate.mm in Sources */,
 				3EED202017B317B60039D681 /* NSObject+TestObjectEx.m in Sources */,
 				3E80E6DF17822058000242ED /* main.m in Sources */,
+				3E240F6617B9DC5300E1F0F6 /* MyCppCls.mm in Sources */,
 				3EED202417B3206A0039D681 /* TestSubObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E80E70A17822D9E000242ED /* TestObject.m in Sources */,
-				3E80E6FE17822058000242ED /* objc_testTests.m in Sources */,
+				3E80E6FE17822058000242ED /* objc_testTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
