@@ -5,6 +5,9 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
+      location = "group:testIOS/testIOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:testOSX/testOSX.xcodeproj">
    </FileRef>
 </Workspace>

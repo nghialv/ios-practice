@@ -50,17 +50,6 @@
     
 }
 
-//REF https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Target-Action/Target-Action.html
-/**
- Cocoa uses the target-action mechanism for communication between a control and another object. This mechanism allows the control and, in OS X its cell or cells, to encapsulate the information necessary to send an application-specific instruction to the appropriate object. The receiving object—typically an instance of a custom class—is called the target. The action is the message that the control sends to the target. The object that is interested in the user event—the target—is the one that imparts significance to it, and this significance is usually reflected in the name it gives to the action.
-
- **/
--(void)testTargetAction
-{
-    //Control objects do not (and should not) retain their targets.
-    
-    
-}
 
 @end
 
