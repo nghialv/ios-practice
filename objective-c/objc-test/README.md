@@ -4,6 +4,8 @@
 
 * Programming with Objective-C
 * Learning Objective-C: A Primer
+* Object-Oriented Programming with Objective-C
+*
 
 ### WWDC Reference
 
@@ -122,5 +124,19 @@ Others
 * explicit type enums 
     * enables return type inference 
 
+
+
+### Definition Notes
+
+* Polymorphism: The ability of different objects to respond, each in its own way, to identical messages is called polymorphism.
+    * The main benefit of polymorphism is that it simplifies the programming interface. It permits conventions to be established that can be reused in class after class
+
+* Dynamism: Three kinds of dynamism are especially important for object-oriented design:
+    * Dynamic typing, waiting until runtime to determine the class of an object
+    * Dynamic binding, determining at runtime what method to invoke
+    * Dynamic loading, adding new components to a program as it runs
+    
+
+* Object-oriented programs are designed by laying out the network of objects with their behaviors and patterns of interaction and by arranging the hierarchy of classes. There’s structure both in the program’s activity and in its definition.
 
 
