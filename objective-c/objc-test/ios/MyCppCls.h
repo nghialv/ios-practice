@@ -13,7 +13,7 @@
 
 typedef struct {
     //unsafe/unretained reference to an objective c object
-    //which doesn't participate in ARC 
+    //which doesn't participate in ARC
     __unsafe_unretained id objc;
 }TestCppStruct;
 
