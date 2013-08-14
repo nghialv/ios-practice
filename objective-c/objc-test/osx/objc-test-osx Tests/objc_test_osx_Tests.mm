@@ -510,6 +510,8 @@ NSLog(@"%@", _obj);
     }
 }
 
+
+
 //Class Names Must Be Unique Across an Entire App
 //Your own classes should use three letter prefixes.
 //You should also name your classes using a noun that makes it clear what the class represents,
@@ -522,7 +524,51 @@ NSLog(@"%@", _obj);
 //the compiler judges which rule it should follow based on the name of the creation method. Objects created via factory methods are managed slightly differently from objects that are created through traditional allocation and initialization or new because of the use of autorelease pool blocks.
 
 
+-(void)testDynamism{
+    
+    //dynamic typing: waiting until compile time to decide the obj type
+    //It permits associations between objects to be determined at runtime, rather than forcing them to be encoded in a static design.
+    id obj = nil;
+    obj  = [[myObject alloc] init];
+    
+    //dynamic binding:
+    //delaying the decision of exactly which method to perform until the program is running.
+    /**
+     Messages invoke methods indirectly. Every message expression must find a method implementation to “call.” To find that method, the messaging machinery must check the class of the receiver and locate its implementation of the method named in the message. When this is done at runtime, the method is dynamically bound to the message. When it’s done by the compiler, the method is statically bound.
+     **/
+    
+    //invoking a non-existing method will CRASH the app
+    @try {
+        [obj performSelector:@selector(someBadFunc)];
+        XCTAssert(false, @"should crash ");
+    }
+    @catch (NSException *exception) {
+        NSLog(@"exception %@", exception);
+    }
+    @finally {
+
+    }
+
+    //but sending a message to nil object has no effect and returns nil
+    XCTAssertTrue(nil == [obj name], @"send msg to nil returns nil");
+    
+    //Dynamic typing and binding also open the possibility that the code you write can send messages to objects not yet invented.
+    
+    
+    //Dynamic Loading
+    //check at runtime if a class is available to use
+    
+    Class CLS = NSClassFromString(@"myObject");
+    XCTAssertTrue(CLS != nil, @"myObject must be available");
+    
+    //whether an instance of a  class type will respond to the method
+    XCTAssertTrue([myObject instancesRespondToSelector:@selector(name)]);
+
+}
+
+
 @end
+
 
 
 
