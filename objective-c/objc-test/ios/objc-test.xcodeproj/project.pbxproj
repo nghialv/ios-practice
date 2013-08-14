@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E11A49E17BC2A2200B80584 /* PlainOldObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E11A49D17BC2A2200B80584 /* PlainOldObject.m */; };
 		3E240F6617B9DC5300E1F0F6 /* MyCppCls.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E240F6417B9DC5300E1F0F6 /* MyCppCls.mm */; };
 		3E80E6D317822058000242ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D217822058000242ED /* Foundation.framework */; };
 		3E80E6D517822058000242ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E80E6D417822058000242ED /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E11A49C17BC2A2200B80584 /* PlainOldObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainOldObject.h; sourceTree = "<group>"; };
+		3E11A49D17BC2A2200B80584 /* PlainOldObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainOldObject.m; sourceTree = "<group>"; };
 		3E240F6417B9DC5300E1F0F6 /* MyCppCls.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyCppCls.mm; sourceTree = "<group>"; };
 		3E240F6517B9DC5300E1F0F6 /* MyCppCls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCppCls.h; sourceTree = "<group>"; };
 		3E80E6CF17822058000242ED /* objc-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +182,8 @@
 				3EED201F17B317B60039D681 /* NSObject+TestObjectEx.m */,
 				3E240F6517B9DC5300E1F0F6 /* MyCppCls.h */,
 				3E240F6417B9DC5300E1F0F6 /* MyCppCls.mm */,
+				3E11A49C17BC2A2200B80584 /* PlainOldObject.h */,
+				3E11A49D17BC2A2200B80584 /* PlainOldObject.m */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				3E80E6E317822058000242ED /* AppDelegate.mm in Sources */,
 				3EED202017B317B60039D681 /* NSObject+TestObjectEx.m in Sources */,
 				3E80E6DF17822058000242ED /* main.m in Sources */,
+				3E11A49E17BC2A2200B80584 /* PlainOldObject.m in Sources */,
 				3E240F6617B9DC5300E1F0F6 /* MyCppCls.mm in Sources */,
 				3EED202417B3206A0039D681 /* TestSubObject.m in Sources */,
 			);
