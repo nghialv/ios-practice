@@ -23,4 +23,7 @@
  an instance of dpObject and NSArray is stored in a nib file, when unarchived they are both instantiated and connection established in-between them
  **/
 @property(weak) IBOutlet NSArray* keywords;
+
+
+- (id)initWithAccountID:(NSString *)identifier;
 @end

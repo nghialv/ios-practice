@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "dpRCRecptionist.h"
+#import "dpObject.h"
 
 @interface testIOSTests : XCTestCase
 
@@ -101,6 +102,22 @@
     
     //Mutable Objects in Collections
 //    Storing mutable objects in collection objects can cause problems. Certain collections can become invalid or even corrupt if objects they contain mutate because, by mutating, these objects can affect the way they are placed in the collection. First, the properties of objects that are keys in hashing collections such as NSDictionary objects or NSSet objects will, if changed, corrupt the collection if the changed properties affect the results of the object’s hash or isEqual: methods.
+}
+
+//REF https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/ObjectAllocation/ObjectAllocation.html#//apple_ref/doc/uid/TP40010810-CH7-SW1
+//REF https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Initialization/Initialization.html
+-(void)testObjectAllocInit
+{
+    //A zone is a page-aligned area of memory for holding related objects and data allocated by an application
+
+    //a bad practice as init may return a different object than alloc
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused"
+    id obj = [dpObject alloc];
+    [obj init];
+    //[obj someotherFunc]
+#pragma GCC diagnostic pop
+     
 }
 
 @end
