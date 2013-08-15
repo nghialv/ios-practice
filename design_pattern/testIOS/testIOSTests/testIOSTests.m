@@ -72,4 +72,41 @@
     //make some changes to obj
     obj.value = @"dennycd";
 }
+
+/**
+  REF https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/ObjectMutability/ObjectMutability.html
+ 
+ Performance is also a reason for immutable versions of objects representing things such as strings and dictionaries. Mutable objects for basic entities such as strings and dictionaries bring some overhead with them. Because they must dynamically manage a changeable backing store—allocating and deallocating chunks of memory as needed—mutable objects can be less efficient than their immutable counterparts.
+ **/
+-(void)testObjectMutability
+{
+    //defensive programming practices
+    
+    //Use a mutable variant of an object when you need to modify its contents frequently and incrementally after it has been created
+    //Sometimes it’s preferable to replace one immutable object with another; for example,  NSString
+    //Rely on the return type for indications of mutability.
+    //
+    
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused"
+    NSMutableDictionary *mutDict = [[NSMutableDictionary alloc] init];
+    NSMutableArray *mutArray = [NSMutableArray arrayWithCapacity:10];
+    NSMutableSet *mutSet = [NSMutableSet set];
+    NSMutableSet *mutSetCopy = [mutSet mutableCopy];
+    NSSet* set = [mutSet copy];  //immutable copy
+#pragma GCC diagnostic pop
+    
+    //So don’t make an assumption about object mutability based on what introspection tells you about an object. Treat objects as mutable or not based on what you are handed at the API boundaries (that is, based on the return type).
+    
+    
+    //Mutable Objects in Collections
+//    Storing mutable objects in collection objects can cause problems. Certain collections can become invalid or even corrupt if objects they contain mutate because, by mutating, these objects can affect the way they are placed in the collection. First, the properties of objects that are keys in hashing collections such as NSDictionary objects or NSSet objects will, if changed, corrupt the collection if the changed properties affect the results of the object’s hash or isEqual: methods.
+}
+
 @end
+
+
+
+
+
+
