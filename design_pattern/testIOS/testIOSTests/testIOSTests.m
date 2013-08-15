@@ -64,7 +64,7 @@
     
     TestObject* obj = [TestObject new];
     
-    dpRCRecptionist *receptionist = [dpRCRecptionist receptionistForKeyPath:@"value"
+    [dpRCRecptionist receptionistForKeyPath:@"value"
                                                                      object:obj
                                                                       queue:[NSOperationQueue mainQueue]
                                                                        task:task];
