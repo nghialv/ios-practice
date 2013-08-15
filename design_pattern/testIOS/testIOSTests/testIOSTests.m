@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "dpRCRecptionist.h"
 #import "dpObject.h"
+#import "dpMyObject.h"
 
 @interface testIOSTests : XCTestCase
 
@@ -118,6 +119,50 @@
     //[obj someotherFunc]
 #pragma GCC diagnostic pop
      
+}
+
+//REF https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Introspection/Introspection.html#//apple_ref/doc/uid/TP40010810-CH9-SW1
+//Introspection refers to the capability of objects to divulge details about themselves as objects at runtime.
+// - places in the inheritance chain
+// - responde to certain message
+// - conforms to specific protocol
+-(void)testIntrospection
+{
+    id obj = [[dpObject alloc] init];
+    id myobj = [[dpMyObject alloc] init];
+    
+    XCTAssert([myobj superclass]==[obj class], @"class equality");
+    
+    
+    XCTAssert( [obj isKindOfClass:[dpObject class]] , @"");
+    XCTAssert([myobj isKindOfClass:[dpObject class]], @""); //belongs to the class, or belong to a subclass of that class
+    XCTAssert(![myobj isMemberOfClass:[dpObject class]], @"");  //no inheritance suport, just the most concrete one
+    
+    
+    //Protocol Test
+    XCTAssert([obj conformsToProtocol:@protocol(dpProtocol)], @"");
+    XCTAssert([obj respondsToSelector:@selector(dummyfunc)], @"");
+    
+    //Run-time Messaging
+    [obj performSelector:@selector(dummyfunc)];
+}
+
+
+-(void)testObjectEquality
+{
+    //The hash method must be implemented to return an integer that can be used as a table address in a hash table structure. If two objects are equal (as determined by the isEqual: method), they must have the same hash value.
+    
+    // If your object could be included in collections such as NSSet objects, you need to define hash and verify the invariant that if two objects are equal, they return the same hash value.
+    
+    //The default NSObject implementation of isEqual: simply checks for pointer equality.
+}
+
+
+-(void)testDelegation
+{
+    //A delegate is an object that acts on behalf of, or in coordination with, another object when that object encounters an event in a program.
+    //The delegating object in a Cocoa or Cocoa Touch application is often a responder object
+    //Delegating objects do not (and should not) retain their delegates.
 }
 
 @end

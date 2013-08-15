@@ -27,6 +27,8 @@
 		3EB3985F17BD52B200AACA84 /* dpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3985D17BD52B200AACA84 /* dpObject.m */; };
 		3EB3986117BD556A00AACA84 /* testIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3986017BD556A00AACA84 /* testIB.xib */; };
 		3EB3986217BD556A00AACA84 /* testIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3986017BD556A00AACA84 /* testIB.xib */; };
+		3EB3986517BD955A00AACA84 /* dpMyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986417BD955A00AACA84 /* dpMyObject.m */; };
+		3EB3986617BD955A00AACA84 /* dpMyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986417BD955A00AACA84 /* dpMyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		3EB3985C17BD52B200AACA84 /* dpObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpObject.h; sourceTree = "<group>"; };
 		3EB3985D17BD52B200AACA84 /* dpObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dpObject.m; sourceTree = "<group>"; };
 		3EB3986017BD556A00AACA84 /* testIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testIB.xib; sourceTree = "<group>"; };
+		3EB3986317BD955A00AACA84 /* dpMyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpMyObject.h; sourceTree = "<group>"; };
+		3EB3986417BD955A00AACA84 /* dpMyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dpMyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				3E11A51017BC54D000B80584 /* dpRCRecptionist.m */,
 				3EB3985C17BD52B200AACA84 /* dpObject.h */,
 				3EB3985D17BD52B200AACA84 /* dpObject.m */,
+				3EB3986317BD955A00AACA84 /* dpMyObject.h */,
+				3EB3986417BD955A00AACA84 /* dpMyObject.m */,
 			);
 			path = testIOS;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				3E11A4F117BC4CE900B80584 /* dpViewController.m in Sources */,
 				3E11A51117BC54D000B80584 /* dpRCRecptionist.m in Sources */,
 				3E11A4EB17BC4CE900B80584 /* dpAppDelegate.m in Sources */,
+				3EB3986517BD955A00AACA84 /* dpMyObject.m in Sources */,
 				3E11A4E717BC4CE900B80584 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB3986617BD955A00AACA84 /* dpMyObject.m in Sources */,
 				3E11A51217BC588A00B80584 /* dpRCRecptionist.m in Sources */,
 				3EB3985F17BD52B200AACA84 /* dpObject.m in Sources */,
 				3E11A50617BC4CE900B80584 /* testIOSTests.m in Sources */,

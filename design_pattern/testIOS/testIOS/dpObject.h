@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface dpObject : NSObject
+@protocol dpProtocol <NSObject>
+-(void)dummyfunc;
+@end
+
+@interface dpObject : NSObject <dpProtocol>
 
 /**
   REF https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html#//apple_ref/doc/uid/TP40010810-CH10-SW1

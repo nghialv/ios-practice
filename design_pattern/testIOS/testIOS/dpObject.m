@@ -11,6 +11,25 @@
 @implementation dpObject
 
 /**
+  Custom definition for object equality
+  effective only when using  [obj isEqual:] 
+  if directly comparing  obj1 == obj2 we are simply doing pointer comparison
+ **/
+- (BOOL)isEqual:(id)other {
+    if (other == self)
+        return YES;
+    if (!other || ![other isKindOfClass:[self class]])
+        return NO;
+    else return NO;
+}
+
+
+-(void)dummyfunc
+{
+    NSLog(@"dpObject::dummyfunc");
+}
+
+/**
  The designated initializer for each class is the initializer with the most coverage; it is the method that initializes the attribute added by the subclass. 
  **/
 - (id)initWithAccountID:(NSString *)identifier {
