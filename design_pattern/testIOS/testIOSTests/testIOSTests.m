@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "dpRCRecptionist.h"
 
 @interface testIOSTests : XCTestCase
 
@@ -47,5 +48,28 @@
     //Many of the control classes in UIKit are implemented to generate certain control events; for example, instances of the UISlider class generate a UIControlEventValueChanged control event, which you can use to send an action message to a target object.
     
     
+}
+
+//TODO - check KVO and return back here 
+-(void)testReceptionist
+{
+    RCTaskBlock task = ^(NSString *keyPath, id object, NSDictionary *change) {
+        NSLog(@"property %@ changed %@", keyPath, change);
+//        NSView *viewForModel = [modelToViewMap objectForKey:model];
+//        NSColor *newColor = [change objectForKey:NSKeyValueChangeNewKey];
+//        [[[viewForModel subviews] objectAtIndex:0] setFillColor:newColor];
+        
+    };
+    
+    
+    TestObject* obj = [TestObject new];
+    
+    dpRCRecptionist *receptionist = [dpRCRecptionist receptionistForKeyPath:@"value"
+                                                                     object:obj
+                                                                      queue:[NSOperationQueue mainQueue]
+                                                                       task:task];
+
+    //make some changes to obj
+    obj.value = @"dennycd";
 }
 @end
