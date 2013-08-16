@@ -29,6 +29,10 @@
 		3EB3986217BD556A00AACA84 /* testIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB3986017BD556A00AACA84 /* testIB.xib */; };
 		3EB3986517BD955A00AACA84 /* dpMyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986417BD955A00AACA84 /* dpMyObject.m */; };
 		3EB3986617BD955A00AACA84 /* dpMyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986417BD955A00AACA84 /* dpMyObject.m */; };
+		3EB3986917BDA32400AACA84 /* MonthArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986817BDA32400AACA84 /* MonthArray.m */; };
+		3EB3986A17BDA32400AACA84 /* MonthArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986817BDA32400AACA84 /* MonthArray.m */; };
+		3EB3986D17BDA89500AACA84 /* ValidatingArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986C17BDA89500AACA84 /* ValidatingArray.m */; };
+		3EB3986E17BDA89500AACA84 /* ValidatingArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3986C17BDA89500AACA84 /* ValidatingArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		3EB3986017BD556A00AACA84 /* testIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testIB.xib; sourceTree = "<group>"; };
 		3EB3986317BD955A00AACA84 /* dpMyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dpMyObject.h; sourceTree = "<group>"; };
 		3EB3986417BD955A00AACA84 /* dpMyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dpMyObject.m; sourceTree = "<group>"; };
+		3EB3986717BDA32400AACA84 /* MonthArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthArray.h; sourceTree = "<group>"; };
+		3EB3986817BDA32400AACA84 /* MonthArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthArray.m; sourceTree = "<group>"; };
+		3EB3986B17BDA89500AACA84 /* ValidatingArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatingArray.h; sourceTree = "<group>"; };
+		3EB3986C17BDA89500AACA84 /* ValidatingArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatingArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,10 @@
 				3EB3985D17BD52B200AACA84 /* dpObject.m */,
 				3EB3986317BD955A00AACA84 /* dpMyObject.h */,
 				3EB3986417BD955A00AACA84 /* dpMyObject.m */,
+				3EB3986717BDA32400AACA84 /* MonthArray.h */,
+				3EB3986817BDA32400AACA84 /* MonthArray.m */,
+				3EB3986B17BDA89500AACA84 /* ValidatingArray.h */,
+				3EB3986C17BDA89500AACA84 /* ValidatingArray.m */,
 			);
 			path = testIOS;
 			sourceTree = "<group>";
@@ -279,9 +291,11 @@
 			files = (
 				3EB3985E17BD52B200AACA84 /* dpObject.m in Sources */,
 				3E11A4F117BC4CE900B80584 /* dpViewController.m in Sources */,
+				3EB3986917BDA32400AACA84 /* MonthArray.m in Sources */,
 				3E11A51117BC54D000B80584 /* dpRCRecptionist.m in Sources */,
 				3E11A4EB17BC4CE900B80584 /* dpAppDelegate.m in Sources */,
 				3EB3986517BD955A00AACA84 /* dpMyObject.m in Sources */,
+				3EB3986D17BDA89500AACA84 /* ValidatingArray.m in Sources */,
 				3E11A4E717BC4CE900B80584 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EB3986617BD955A00AACA84 /* dpMyObject.m in Sources */,
+				3EB3986A17BDA32400AACA84 /* MonthArray.m in Sources */,
 				3E11A51217BC588A00B80584 /* dpRCRecptionist.m in Sources */,
 				3EB3985F17BD52B200AACA84 /* dpObject.m in Sources */,
+				3EB3986E17BDA89500AACA84 /* ValidatingArray.m in Sources */,
 				3E11A50617BC4CE900B80584 /* testIOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
