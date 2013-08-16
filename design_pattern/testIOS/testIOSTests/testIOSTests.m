@@ -10,6 +10,9 @@
 #import "dpRCRecptionist.h"
 #import "dpObject.h"
 #import "dpMyObject.h"
+#import "MonthArray.h"
+#import "ValidatingArray.h"
+
 
 @interface testIOSTests : XCTestCase
 
@@ -163,6 +166,18 @@
     //A delegate is an object that acts on behalf of, or in coordination with, another object when that object encounters an event in a program.
     //The delegating object in a Cocoa or Cocoa Touch application is often a responder object
     //Delegating objects do not (and should not) retain their delegates.
+}
+
+
+-(void)testClassCluster
+{
+    id num = [NSNumber numberWithBool:YES];
+    NSLog(@"%@", NSStringFromClass([num class]));  //__NSCFBoolean
+    
+    
+    id arr = [MonthArray monthArray];
+    NSLog(@"%@",arr);
+    
 }
 
 @end
