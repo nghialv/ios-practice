@@ -7,6 +7,10 @@
 * Energy Best Practices 
 * Designing Code for Performance
 
+## Document 
+
+[Advanced Memory Management Programming Guide](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i)
+
 ### Notes 
     * Instruments focused on allocation heap 
     * Processes contain more than just heap moery 
