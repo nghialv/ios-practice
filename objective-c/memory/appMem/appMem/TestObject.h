@@ -62,8 +62,10 @@
  
  * Each thread in a Cocoa application maintains its own stack of autorelease pool blocks. If you are writing a Foundation-only program or if you detach a thread, you need to create your own autorelease pool block.
  
- * If you are writing a program that is not based on a UI framework, such as a command-line too, create auto-release pool 
+ * If you are writing a program that is not based on a UI framework, such as a command-line too, create auto-release pool
  
+ 
+ *** UIKit frameworks process each event-loop iteration (such as a mouse down event or a tap) within an autorelease pool block. ***
  **/
 @interface TestObject : NSObject
 @property(weak) id delegate;
