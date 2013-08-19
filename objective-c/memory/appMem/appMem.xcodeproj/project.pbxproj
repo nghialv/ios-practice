@@ -25,6 +25,8 @@
 		3EA8360717C2B4C500380E63 /* TestCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360517C2B4C500380E63 /* TestCpp.mm */; };
 		3EA8360817C2B56900380E63 /* TestCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360517C2B4C500380E63 /* TestCpp.mm */; };
 		3EA8360B17C2C15100380E63 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360A17C2C15100380E63 /* MyView.m */; };
+		3EA8360D17C2D87600380E63 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA8360C17C2D87600380E63 /* CoreFoundation.framework */; };
+		3EA8360E17C2D88500380E63 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA8360C17C2D87600380E63 /* CoreFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 		3EA8360617C2B4C500380E63 /* TestCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCpp.h; sourceTree = "<group>"; };
 		3EA8360917C2C15100380E63 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		3EA8360A17C2C15100380E63 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		3EA8360C17C2D87600380E63 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA8360D17C2D87600380E63 /* CoreFoundation.framework in Frameworks */,
 				3E2FCD921794A2FC00A8257B /* CoreGraphics.framework in Frameworks */,
 				3E2FCD941794A2FC00A8257B /* UIKit.framework in Frameworks */,
 				3E2FCD901794A2FC00A8257B /* Foundation.framework in Frameworks */,
@@ -81,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA8360E17C2D88500380E63 /* CoreFoundation.framework in Frameworks */,
 				3E2FCDAF1794A2FC00A8257B /* XCTest.framework in Frameworks */,
 				3E2FCDB11794A2FC00A8257B /* UIKit.framework in Frameworks */,
 				3E2FCDB01794A2FC00A8257B /* Foundation.framework in Frameworks */,
@@ -113,6 +118,7 @@
 		3E2FCD8E1794A2FC00A8257B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EA8360C17C2D87600380E63 /* CoreFoundation.framework */,
 				3E2FCD8F1794A2FC00A8257B /* Foundation.framework */,
 				3E2FCD911794A2FC00A8257B /* CoreGraphics.framework */,
 				3E2FCD931794A2FC00A8257B /* UIKit.framework */,

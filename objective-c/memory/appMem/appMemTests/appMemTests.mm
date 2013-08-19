@@ -167,8 +167,64 @@
 //Yes. You can even put strong/weak ids in classes and containers. The ARC compiler synthesizes retain/release logic in copy constructors and destructors etc to make this work.
 
 
+/**
+  When trying to understand memory management in a Core Foundation application, it is helpful to think not in terms of memory management per se, but instead in terms of object ownership
+ 
+ 
+ If you create an object (either directly or by making a copy of another object—see “The Create Rule”), you own it.
+ If you get an object from somewhere else, you do not own it. If you want to prevent it being disposed of, you must add yourself as an owner (using CFRetain).
+ If you are an owner of an object, you must relinquish ownership when you have finished using it (using CFRelease).
+
+ 
+ if a function name contains the word "Create" or "Copy", you own the object. If a function name contains the word "Get", you do not own the object. 
+ 
+ f you receive an object from any Core Foundation function other than a creation or copy function—such as a Get function—you do not own it and cannot be certain of the object’s life span.
+ **/
+-(void)testCoreFoundationMem
+{
+    /**
+     CFTimeZoneRef   CFTimeZoneCreateWithTimeIntervalFromGMT (CFAllocatorRef allocator, CFTimeInterval ti);
+     CFDictionaryRef CFTimeZoneCopyAbbreviationDictionary (void);
+     CFBundleRef     CFBundleCreate (CFAllocatorRef allocator, CFURLRef bundleURL);
+     **/
+    
+    //claim ownership using CFRetain
+    //reluiquish ownership using CFRelease
+    
+    //A corollary of the basic rules is that when you pass an object to another object (as a function parameter), you should expect that the receiver will take ownership of the passed object if it needs to maintain it.
+    
+//    static CFStringRef title = NULL;
+//    
+//    void SetTitle(CFStringRef newTitle) {
+//        CFStringRef temp = title;
+//        title = CFStringCreateCopy(kCFAllocatorDefault , newTitle);
+//        CFRelease(temp);
+//    }
+ 
+    
+}
+
+-(void)testEndianess
+{
+    CFByteOrder order = CFByteOrderGetCurrent();
+    NSLog(@"%ld:  (%ld,%ld,%ld)", order, CFByteOrderBigEndian, CFByteOrderLittleEndian, CFByteOrderUnknown);
+}
+
 @end
 
+/*
+static CFStringRef title = NULL;
+void MyFunction(CFDictionary dict, Boolean aFlag) {
+    if (!title && !aFlag) {
+        title = (CFStringRef)CFDictionaryGetValue(dict, CFSTR("title"));
+        title = CFRetain(title);
+    }
+    //Do something with title here.
+    if (aFlag) {
+        CFRelease(title);
+    }
+}
+*/
 
 
 
