@@ -21,6 +21,7 @@
 		3E2FCDB11794A2FC00A8257B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2FCD931794A2FC00A8257B /* UIKit.framework */; };
 		3E2FCDB91794A2FC00A8257B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FCDB71794A2FC00A8257B /* InfoPlist.strings */; };
 		3E2FCDBB1794A2FC00A8257B /* appMemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FCDBA1794A2FC00A8257B /* appMemTests.m */; };
+		3E684CEB17C1E59500E84615 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E684CEA17C1E59500E84615 /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		3E2FCDB81794A2FC00A8257B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E2FCDBA1794A2FC00A8257B /* appMemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appMemTests.m; sourceTree = "<group>"; };
 		3E2FCDC41794A31E00A8257B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3E684CE917C1E59500E84615 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		3E684CEA17C1E59500E84615 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 		3E2FCD951794A2FC00A8257B /* appMem */ = {
 			isa = PBXGroup;
 			children = (
+				3E684CE917C1E59500E84615 /* TestObject.h */,
+				3E684CEA17C1E59500E84615 /* TestObject.m */,
 				3E2FCD9E1794A2FC00A8257B /* AppDelegate.h */,
 				3E2FCD9F1794A2FC00A8257B /* AppDelegate.m */,
 				3E2FCDA11794A2FC00A8257B /* Main.storyboard */,
@@ -256,6 +261,7 @@
 			files = (
 				3E2FCDA61794A2FC00A8257B /* ViewController.m in Sources */,
 				3E2FCDA01794A2FC00A8257B /* AppDelegate.m in Sources */,
+				3E684CEB17C1E59500E84615 /* TestObject.m in Sources */,
 				3E2FCD9C1794A2FC00A8257B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +467,7 @@
 				3E2FCDC01794A2FC00A8257B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E2FCDC11794A2FC00A8257B /* Build configuration list for PBXNativeTarget "appMemTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				3E2FCDC31794A2FC00A8257B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

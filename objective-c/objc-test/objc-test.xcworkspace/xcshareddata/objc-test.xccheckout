@@ -2,20 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>11E6BF78-0CC2-4EEE-8C14-D6D227722A38</string>
+	<string>0190FE15-59AC-4267-90A1-E24B8E1B7CF5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>objc-test</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>66812780-16BB-4015-8F3C-811C39C527C8</key>
+		<key>7EAA0675-490D-4A88-AECD-BD3861C6E1CC</key>
 		<string>https://github.com/dennycd/ios-practice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>objective-c/objc-test/objc-test.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>66812780-16BB-4015-8F3C-811C39C527C8</key>
+		<key>7EAA0675-490D-4A88-AECD-BD3861C6E1CC</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -23,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>66812780-16BB-4015-8F3C-811C39C527C8</string>
+	<string>7EAA0675-490D-4A88-AECD-BD3861C6E1CC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>66812780-16BB-4015-8F3C-811C39C527C8</string>
+			<string>7EAA0675-490D-4A88-AECD-BD3861C6E1CC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios-practice</string>
 		</dict>
