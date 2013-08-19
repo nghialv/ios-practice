@@ -11,12 +11,13 @@
 
 #include <iostream>
 
+//You can't use strong ids in C structures.
 /**
- You cannot use object pointers in C structures. / but can do it in a struct within a C++ compilation unit
+ You cannot use object pointers in C structures. / BUT can do it in a struct within a C++ compilation unit
  Rather than using a struct, you can create an Objective-C class to manage the data instead.
  **/
 struct TestStruct{
-    id _obj;
+    id _obj; //This is because x defaults to strongly retained and the compiler can’t safely synthesize all the code required to make it work correctly.
 };
 
 
