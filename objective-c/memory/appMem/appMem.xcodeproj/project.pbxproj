@@ -24,6 +24,7 @@
 		3E684CEB17C1E59500E84615 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E684CEA17C1E59500E84615 /* TestObject.m */; };
 		3EA8360717C2B4C500380E63 /* TestCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360517C2B4C500380E63 /* TestCpp.mm */; };
 		3EA8360817C2B56900380E63 /* TestCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360517C2B4C500380E63 /* TestCpp.mm */; };
+		3EA8360B17C2C15100380E63 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360A17C2C15100380E63 /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		3E684CEA17C1E59500E84615 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 		3EA8360517C2B4C500380E63 /* TestCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestCpp.mm; sourceTree = "<group>"; };
 		3EA8360617C2B4C500380E63 /* TestCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCpp.h; sourceTree = "<group>"; };
+		3EA8360917C2C15100380E63 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		3EA8360A17C2C15100380E63 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				3E2FCDA51794A2FC00A8257B /* ViewController.m */,
 				3E2FCDA71794A2FC00A8257B /* Images.xcassets */,
 				3E2FCD961794A2FC00A8257B /* Supporting Files */,
+				3EA8360917C2C15100380E63 /* MyView.h */,
+				3EA8360A17C2C15100380E63 /* MyView.m */,
 			);
 			path = appMem;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			files = (
 				3E2FCDA61794A2FC00A8257B /* ViewController.m in Sources */,
 				3E2FCDA01794A2FC00A8257B /* AppDelegate.m in Sources */,
+				3EA8360B17C2C15100380E63 /* MyView.m in Sources */,
 				3E684CEB17C1E59500E84615 /* TestObject.m in Sources */,
 				3EA8360717C2B4C500380E63 /* TestCpp.mm in Sources */,
 				3E2FCD9C1794A2FC00A8257B /* main.m in Sources */,
