@@ -67,8 +67,31 @@
  
  *** UIKit frameworks process each event-loop iteration (such as a mouse down event or a tap) within an autorelease pool block. ***
  **/
+
+
+//ARC ---
 @interface TestObject : NSObject
-@property(weak) id delegate;
+
+@property(strong) NSString* myName; // just like @property(retain)
+@property(weak) id delegate; //similar to @property(retain)
+
+//You cannot give an accessor a name that begins with new. This in turn means that you can’t, for example, declare a property whose name begins with new unless you specify a different getter:
+//@property NSString *newTitle; //not going to work
+
+// Works:
+@property (getter=theNewTitle) NSString *newTitle;
+
+
+-(BOOL)performOperationWithError:(NSError * __autoreleasing *)error;
 @end
+
+
+
+
+
+
+
+
+
 
 

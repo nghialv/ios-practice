@@ -21,4 +21,22 @@
     
 }
 
+
+-(void)setNewTitle:(NSString *)newTitle
+{
+    ;
+}
+
+-(NSString *)theNewTitle
+{
+    return @"newtitle";
+}
+
+-(BOOL)performOperationWithError:(NSError * __autoreleasing *)error
+{
+    //error is passed by reference, and autoreleased on return
+    *error = [[NSError alloc] initWithDomain:@"dennycd.me" code:1 userInfo:nil];
+    return YES;
+}
+
 @end
