@@ -70,3 +70,5 @@
 @interface TestObject : NSObject
 @property(weak) id delegate;
 @end
+
+

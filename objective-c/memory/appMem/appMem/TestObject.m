@@ -10,9 +10,15 @@
 
 @implementation TestObject
 
--(void)dummy
+/**
+ You may implement a dealloc method if you need to manage resources other than releasing instance variables. You do not have to (indeed you cannot) release instance variables, but you may need to invoke [systemClassInstance setDelegate:nil] on system classes and other code that isn’t compiled using ARC.
+ 
+ Custom dealloc methods in ARC do not require a call to [super dealloc] (it actually results in a compiler error). The chaining to super is automated and enforced by the compiler.
+ 
+ **/
+-(void)dealloc
 {
-
+    
 }
 
 @end

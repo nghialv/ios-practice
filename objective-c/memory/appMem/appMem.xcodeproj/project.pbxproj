@@ -20,8 +20,10 @@
 		3E2FCDB01794A2FC00A8257B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2FCD8F1794A2FC00A8257B /* Foundation.framework */; };
 		3E2FCDB11794A2FC00A8257B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2FCD931794A2FC00A8257B /* UIKit.framework */; };
 		3E2FCDB91794A2FC00A8257B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FCDB71794A2FC00A8257B /* InfoPlist.strings */; };
-		3E2FCDBB1794A2FC00A8257B /* appMemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FCDBA1794A2FC00A8257B /* appMemTests.m */; };
+		3E2FCDBB1794A2FC00A8257B /* appMemTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FCDBA1794A2FC00A8257B /* appMemTests.mm */; };
 		3E684CEB17C1E59500E84615 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E684CEA17C1E59500E84615 /* TestObject.m */; };
+		3EA8360717C2B4C500380E63 /* TestCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360517C2B4C500380E63 /* TestCpp.mm */; };
+		3EA8360817C2B56900380E63 /* TestCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EA8360517C2B4C500380E63 /* TestCpp.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,12 @@
 		3E2FCDAE1794A2FC00A8257B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E2FCDB61794A2FC00A8257B /* appMemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "appMemTests-Info.plist"; sourceTree = "<group>"; };
 		3E2FCDB81794A2FC00A8257B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3E2FCDBA1794A2FC00A8257B /* appMemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appMemTests.m; sourceTree = "<group>"; };
+		3E2FCDBA1794A2FC00A8257B /* appMemTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = appMemTests.mm; sourceTree = "<group>"; };
 		3E2FCDC41794A31E00A8257B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		3E684CE917C1E59500E84615 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		3E684CEA17C1E59500E84615 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		3EA8360517C2B4C500380E63 /* TestCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestCpp.mm; sourceTree = "<group>"; };
+		3EA8360617C2B4C500380E63 /* TestCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCpp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 			children = (
 				3E684CE917C1E59500E84615 /* TestObject.h */,
 				3E684CEA17C1E59500E84615 /* TestObject.m */,
+				3EA8360617C2B4C500380E63 /* TestCpp.h */,
+				3EA8360517C2B4C500380E63 /* TestCpp.mm */,
 				3E2FCD9E1794A2FC00A8257B /* AppDelegate.h */,
 				3E2FCD9F1794A2FC00A8257B /* AppDelegate.m */,
 				3E2FCDA11794A2FC00A8257B /* Main.storyboard */,
@@ -144,7 +150,7 @@
 		3E2FCDB41794A2FC00A8257B /* appMemTests */ = {
 			isa = PBXGroup;
 			children = (
-				3E2FCDBA1794A2FC00A8257B /* appMemTests.m */,
+				3E2FCDBA1794A2FC00A8257B /* appMemTests.mm */,
 				3E2FCDB51794A2FC00A8257B /* Supporting Files */,
 			);
 			path = appMemTests;
@@ -262,6 +268,7 @@
 				3E2FCDA61794A2FC00A8257B /* ViewController.m in Sources */,
 				3E2FCDA01794A2FC00A8257B /* AppDelegate.m in Sources */,
 				3E684CEB17C1E59500E84615 /* TestObject.m in Sources */,
+				3EA8360717C2B4C500380E63 /* TestCpp.mm in Sources */,
 				3E2FCD9C1794A2FC00A8257B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E2FCDBB1794A2FC00A8257B /* appMemTests.m in Sources */,
+				3EA8360817C2B56900380E63 /* TestCpp.mm in Sources */,
+				3E2FCDBB1794A2FC00A8257B /* appMemTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

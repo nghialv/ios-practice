@@ -183,5 +183,10 @@ consider freeing up memory before entering background
     * avoid memory spikes
     * __weak , @autoreleasetool
 
+
+### ARC Notes
+
+ARC works by adding code at compile time to ensure that objects live as long as necessary, but no longer.
+
 ### Author 
 Denny C. Dai <dennycd@me.com>
