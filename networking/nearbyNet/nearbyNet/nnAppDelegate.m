@@ -54,7 +54,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //identify self
-    MCPeerID *myPeerID = [[MCPeerID alloc] initWithDisplayName:@"dennycd"];
+    MCPeerID *myPeerID = [[MCPeerID alloc] initWithDisplayName:@"advertiser"];
     
     //session object
     MCSession* session = [[MCSession alloc] initWithPeer:myPeerID];
@@ -64,7 +64,7 @@
     
     
     //setup self as advertiser 
-    _assistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"" discoveryInfo:nil session:session];
+    _assistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"boltzmann" discoveryInfo:nil session:session];
     
     //start advertising
     [_assistant start];
