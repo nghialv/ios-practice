@@ -21,6 +21,7 @@
 		3EAEA9CA17C2E9F600264DE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAEA9AC17C2E9F600264DE3 /* UIKit.framework */; };
 		3EAEA9D217C2E9F600264DE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EAEA9D017C2E9F600264DE3 /* InfoPlist.strings */; };
 		3EAEA9D417C2E9F600264DE3 /* nearbyNetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAEA9D317C2E9F600264DE3 /* nearbyNetTests.m */; };
+		3EAEA9DF17C2EDB800264DE3 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAEA9DE17C2EDB800264DE3 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3EAEA9CF17C2E9F600264DE3 /* nearbyNetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nearbyNetTests-Info.plist"; sourceTree = "<group>"; };
 		3EAEA9D117C2E9F600264DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EAEA9D317C2E9F600264DE3 /* nearbyNetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nearbyNetTests.m; sourceTree = "<group>"; };
+		3EAEA9DE17C2EDB800264DE3 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAEA9DF17C2EDB800264DE3 /* MultipeerConnectivity.framework in Frameworks */,
 				3EAEA9AB17C2E9F600264DE3 /* CoreGraphics.framework in Frameworks */,
 				3EAEA9AD17C2E9F600264DE3 /* UIKit.framework in Frameworks */,
 				3EAEA9A917C2E9F600264DE3 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		3EAEA9A717C2E9F600264DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EAEA9DE17C2EDB800264DE3 /* MultipeerConnectivity.framework */,
 				3EAEA9A817C2E9F600264DE3 /* Foundation.framework */,
 				3EAEA9AA17C2E9F600264DE3 /* CoreGraphics.framework */,
 				3EAEA9AC17C2E9F600264DE3 /* UIKit.framework */,

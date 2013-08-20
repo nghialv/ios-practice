@@ -1,74 +1,17 @@
 //
 //  nnAppDelegate.m
-//  nearbyNet
+//  nearbyNetBrowser
 //
 //  Created by Denny C. Dai on 8/19/2013.
 //  Copyright (c) 2013 Denny C. Dai. All rights reserved.
 //
 
 #import "nnAppDelegate.h"
-#import <MultipeerConnectivity/MultipeerConnectivity.h>
-
-@interface nnAppDelegate () <MCSessionDelegate>
-{
-    MCAdvertiserAssistant* __strong _assistant;
-}
-@end
 
 @implementation nnAppDelegate
-    
-#pragma mark - MCSessionDelegate
-    
-// Remote peer changed state
-- (void)session:(MCSession *)session peer:(MCPeerID *)peerID didChangeState:(MCSessionState)state
-{
-    
-}
-
-// Received data from remote peer
-- (void)session:(MCSession *)session didReceiveData:(NSData *)data fromPeer:(MCPeerID *)peerID
-{
-    
-}
-
-// Received a byte stream from remote peer
-- (void)session:(MCSession *)session didReceiveStream:(NSInputStream *)stream withName:(NSString *)streamName fromPeer:(MCPeerID *)peerID
-{
-    
-}
-
-// Start receiving a resource from remote peer
-- (void)session:(MCSession *)session didStartReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID withProgress:(NSProgress *)progress
-{
-    
-}
-
-// Finished receiving a resource from remote peer and saved the content in a temporary location - the app is responsible for moving the file to a permanent location within its sandbox
-- (void)session:(MCSession *)session didFinishReceivingResourceWithName:(NSString *)resourceName fromPeer:(MCPeerID *)peerID atURL:(NSURL *)localURL withError:(NSError *)error
-{
-    
-}
-
-#pragma mark -
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //identify self
-    MCPeerID *myPeerID = [[MCPeerID alloc] initWithDisplayName:@"dennycd"];
-    
-    //session object
-    MCSession* session = [[MCSession alloc] initWithPeer:myPeerID];
-    
-    //session delegate
-    session.delegate = self;
-    
-    
-    //setup self as advertiser 
-    _assistant = [[MCAdvertiserAssistant alloc] initWithServiceType:@"" discoveryInfo:nil session:session];
-    
-    //start advertising
-    [_assistant start];
-    
     // Override point for customization after application launch.
     return YES;
 }
