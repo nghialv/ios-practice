@@ -16,10 +16,7 @@ Main Category
 
 * MVC
 	* Collection View 
-	* Image & Rendering
-	* Motion Effects
 	* Multi-Tasking 
-	* UI Dynamics 
 	* View Controller Basic 
 	 
 	
