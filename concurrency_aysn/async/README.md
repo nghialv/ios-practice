@@ -1,5 +1,17 @@
 ### Async with Block, GCD and XPC 
 
+### WWDC Reference
+    * WWDC 2012 session #712 - Asynchronous Design Patterns with Blocks, GCD, and XPC
+    * WWDC 2011 session #210 - Mastering Grand Central Dispatch
+
+### Doc Reference 
+    
+    * [Concurrent Programming Guide](https://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html)
+    * [Block Programming Topic](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Blocks/Articles/00_Introduction.html)
+    * [Grand Central Dispatch Reference](https://developer.apple.com/library/ios/documentation/Performance/Reference/GCD_libdispatch_Ref/Reference/reference.html)
+    * [Thread Programming Guide](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html)
+
+
 
 ### Design Patterns
 
@@ -51,8 +63,5 @@
      * pointer lifetime tied to container object
      * add `__attribute__((objc_precise_lifetime))`
 
-### Reference 
-    * WWDC 2012 session #712 - Asynchronous Design Patterns with Blocks, GCD, and XPC
-    * WWDC 2011 session #210 - Mastering Grand Central Dispatch
-    * WWDC 2011 session 210 - Mastering Grand Central Dispatch 
+
 
