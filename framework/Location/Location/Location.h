@@ -9,8 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "TestPubObject.h"
 
+@protocol LocationDelegate <NSObject>
+@required
+-(void)dummy;
+@end
+
 /**
-  Within this header you are going to import all of the public headers for your framework.
+  Within this header you are goitng to import all of the public headers for your framework.
  
  Public headers are headers that will be copied to the .framework and can be imported by those using your framework. 
  This differs from "project" headers which will not be distributed with the framework. This distinction is what allows you to have a concept of public and private APIs.
