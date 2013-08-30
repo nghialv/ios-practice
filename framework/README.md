@@ -1,8 +1,10 @@
 ### iOS Framework build test
 
-Reference Project 
+framework building main tutorial
 
  * https://github.com/jverkoey/iOS-Framework
- * https://github.com/kstenerud/iOS-Universal-Framework
 
+Shell scripting 
+
+ * [Shell Scripting Primer](https://developer.apple.com/library/mac/documentation/OpenSource/Conceptual/ShellScripting/Introduction/Introduction.html) 
 
