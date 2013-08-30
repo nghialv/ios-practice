@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EE9845117D14D6B00AFAE5F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9845017D14D6B00AFAE5F /* CoreFoundation.framework */; };
+		3EE9845717D14D6B00AFAE5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EE9845517D14D6B00AFAE5F /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EE9844D17D14D6B00AFAE5F /* LocationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE9845017D14D6B00AFAE5F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3EE9845417D14D6B00AFAE5F /* LocationResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationResources-Info.plist"; sourceTree = "<group>"; };
+		3EE9845617D14D6B00AFAE5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3EE9845817D14D6B00AFAE5F /* LocationResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationResources-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EE9844A17D14D6B00AFAE5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE9845117D14D6B00AFAE5F /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EE9844417D14D6B00AFAE5F = {
+			isa = PBXGroup;
+			children = (
+				3EE9845217D14D6B00AFAE5F /* LocationResources */,
+				3EE9844F17D14D6B00AFAE5F /* Frameworks */,
+				3EE9844E17D14D6B00AFAE5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE9844E17D14D6B00AFAE5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EE9844D17D14D6B00AFAE5F /* LocationResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EE9844F17D14D6B00AFAE5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EE9845017D14D6B00AFAE5F /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EE9845217D14D6B00AFAE5F /* LocationResources */ = {
+			isa = PBXGroup;
+			children = (
+				3EE9845317D14D6B00AFAE5F /* Supporting Files */,
+			);
+			path = LocationResources;
+			sourceTree = "<group>";
+		};
+		3EE9845317D14D6B00AFAE5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EE9845417D14D6B00AFAE5F /* LocationResources-Info.plist */,
+				3EE9845517D14D6B00AFAE5F /* InfoPlist.strings */,
+				3EE9845817D14D6B00AFAE5F /* LocationResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EE9844C17D14D6B00AFAE5F /* LocationResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE9845B17D14D6B00AFAE5F /* Build configuration list for PBXNativeTarget "LocationResources" */;
+			buildPhases = (
+				3EE9844917D14D6B00AFAE5F /* Sources */,
+				3EE9844A17D14D6B00AFAE5F /* Frameworks */,
+				3EE9844B17D14D6B00AFAE5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationResources;
+			productName = LocationResources;
+			productReference = 3EE9844D17D14D6B00AFAE5F /* LocationResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EE9844517D14D6B00AFAE5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Denny C. Dai";
+			};
+			buildConfigurationList = 3EE9844817D14D6B00AFAE5F /* Build configuration list for PBXProject "LocationResources" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3EE9844417D14D6B00AFAE5F;
+			productRefGroup = 3EE9844E17D14D6B00AFAE5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EE9844C17D14D6B00AFAE5F /* LocationResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EE9844B17D14D6B00AFAE5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE9845717D14D6B00AFAE5F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EE9844917D14D6B00AFAE5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3EE9845517D14D6B00AFAE5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EE9845617D14D6B00AFAE5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EE9845917D14D6B00AFAE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3EE9845A17D14D6B00AFAE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3EE9845C17D14D6B00AFAE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationResources/LocationResources-Prefix.pch";
+				INFOPLIST_FILE = "LocationResources/LocationResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3EE9845D17D14D6B00AFAE5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LocationResources/LocationResources-Prefix.pch";
+				INFOPLIST_FILE = "LocationResources/LocationResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EE9844817D14D6B00AFAE5F /* Build configuration list for PBXProject "LocationResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE9845917D14D6B00AFAE5F /* Debug */,
+				3EE9845A17D14D6B00AFAE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE9845B17D14D6B00AFAE5F /* Build configuration list for PBXNativeTarget "LocationResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE9845C17D14D6B00AFAE5F /* Debug */,
+				3EE9845D17D14D6B00AFAE5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EE9844517D14D6B00AFAE5F /* Project object */;
+}
