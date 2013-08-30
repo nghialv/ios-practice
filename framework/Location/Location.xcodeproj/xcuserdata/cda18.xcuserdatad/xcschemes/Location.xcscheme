@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0500"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "set -e&#10;&#10;mkdir -p &quot;${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers&quot;&#10;&#10;# Link the &quot;Current&quot; version to &quot;A&quot;&#10;/bin/ln -sfh A &quot;${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current&quot;&#10;/bin/ln -sfh Versions/Current/Headers &quot;${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers&quot;&#10;/bin/ln -sfh &quot;Versions/Current/${PRODUCT_NAME}&quot; &quot;${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}&quot;&#10;&#10;# The -a ensures that the headers maintain the source modification date so that we don&apos;t constantly&#10;# cause propagating rebuilds of files that import these headers.&#10;/bin/cp -a &quot;${TARGET_BUILD_DIR}/include/${PRODUCT_NAME}/&quot; &quot;${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "3E22772D17D04B4D00426B00"
+                     BuildableName = "libLocation.a"
+                     BlueprintName = "Location"
+                     ReferencedContainer = "container:Location.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3E22772D17D04B4D00426B00"
+               BuildableName = "libLocation.a"
+               BlueprintName = "Location"
+               ReferencedContainer = "container:Location.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3E22773D17D04B4D00426B00"
+               BuildableName = "LocationTests.xctest"
+               BlueprintName = "LocationTests"
+               ReferencedContainer = "container:Location.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
