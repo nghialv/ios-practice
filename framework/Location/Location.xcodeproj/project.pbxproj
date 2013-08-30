@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3E22775E17D0579F00426B00 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3E22775F17D0579F00426B00 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+			);
+			dependencies = (
+				3E22776317D057B800426B00 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		3E22773217D04B4D00426B00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E22773117D04B4D00426B00 /* Foundation.framework */; };
 		3E22773717D04B4D00426B00 /* Location.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3E22773617D04B4D00426B00 /* Location.h */; };
@@ -23,6 +37,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		3E22774417D04B4D00426B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E22772617D04B4D00426B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E22772D17D04B4D00426B00;
+			remoteInfo = Location;
+		};
+		3E22776217D057B800426B00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3E22772617D04B4D00426B00 /* Project object */;
 			proxyType = 1;
@@ -216,6 +237,7 @@
 			targets = (
 				3E22772D17D04B4D00426B00 /* Location */,
 				3E22773D17D04B4D00426B00 /* LocationTests */,
+				3E22775E17D0579F00426B00 /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +279,11 @@
 			isa = PBXTargetDependency;
 			target = 3E22772D17D04B4D00426B00 /* Location */;
 			targetProxy = 3E22774417D04B4D00426B00 /* PBXContainerItemProxy */;
+		};
+		3E22776317D057B800426B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E22772D17D04B4D00426B00 /* Location */;
+			targetProxy = 3E22776217D057B800426B00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -406,6 +433,20 @@
 			};
 			name = Release;
 		};
+		3E22776017D0579F00426B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E22776117D0579F00426B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,6 +472,14 @@
 			buildConfigurations = (
 				3E22775517D04B4D00426B00 /* Debug */,
 				3E22775617D04B4D00426B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3E22775F17D0579F00426B00 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E22776017D0579F00426B00 /* Debug */,
+				3E22776117D0579F00426B00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
