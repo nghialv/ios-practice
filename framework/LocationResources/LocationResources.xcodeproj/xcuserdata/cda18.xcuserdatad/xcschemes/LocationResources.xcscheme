@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3EE9844C17D14D6B00AFAE5F"
-               BuildableName = "LocationResources.bundle"
+               BuildableName = "Location.bundle"
                BlueprintName = "LocationResources"
                ReferencedContainer = "container:LocationResources.xcodeproj">
             </BuildableReference>

@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		3EE9845117D14D6B00AFAE5F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE9845017D14D6B00AFAE5F /* CoreFoundation.framework */; };
 		3EE9845717D14D6B00AFAE5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EE9845517D14D6B00AFAE5F /* InfoPlist.strings */; };
+		3EE9845F17D14EB400AFAE5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE9845E17D14EB400AFAE5F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3EE9844D17D14D6B00AFAE5F /* LocationResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE9844D17D14D6B00AFAE5F /* Location.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Location.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE9845017D14D6B00AFAE5F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		3EE9845417D14D6B00AFAE5F /* LocationResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationResources-Info.plist"; sourceTree = "<group>"; };
 		3EE9845617D14D6B00AFAE5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EE9845817D14D6B00AFAE5F /* LocationResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocationResources-Prefix.pch"; sourceTree = "<group>"; };
+		3EE9845E17D14EB400AFAE5F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,7 @@
 		3EE9844E17D14D6B00AFAE5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EE9844D17D14D6B00AFAE5F /* LocationResources.bundle */,
+				3EE9844D17D14D6B00AFAE5F /* Location.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +72,7 @@
 				3EE9845417D14D6B00AFAE5F /* LocationResources-Info.plist */,
 				3EE9845517D14D6B00AFAE5F /* InfoPlist.strings */,
 				3EE9845817D14D6B00AFAE5F /* LocationResources-Prefix.pch */,
+				3EE9845E17D14EB400AFAE5F /* Main.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -91,7 +94,7 @@
 			);
 			name = LocationResources;
 			productName = LocationResources;
-			productReference = 3EE9844D17D14D6B00AFAE5F /* LocationResources.bundle */;
+			productReference = 3EE9844D17D14D6B00AFAE5F /* Location.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EE9845717D14D6B00AFAE5F /* InfoPlist.strings in Resources */,
+				3EE9845F17D14EB400AFAE5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +235,9 @@
 				GCC_PREFIX_HEADER = "LocationResources/LocationResources-Prefix.pch";
 				INFOPLIST_FILE = "LocationResources/LocationResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = Location;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -244,7 +250,9 @@
 				GCC_PREFIX_HEADER = "LocationResources/LocationResources-Prefix.pch";
 				INFOPLIST_FILE = "LocationResources/LocationResources-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = Location;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
