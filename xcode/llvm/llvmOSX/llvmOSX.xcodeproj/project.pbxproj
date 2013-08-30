@@ -39,7 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3E3E31E6178E2066004094DA /* llvmOSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = "llvmOSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3E31E6178E2066004094DA /* llvmOSX Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "llvmOSX Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3E31E7178E2066004094DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3E3E31EB178E2066004094DA /* llvmOSX Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "llvmOSX Tests-Info.plist"; sourceTree = "<group>"; };
 		3E3E31ED178E2066004094DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -389,6 +389,7 @@
 				3E3E31F6178E2066004094DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E444520178E1DB1008EE2EB /* Build configuration list for PBXProject "llvmOSX" */ = {
 			isa = XCConfigurationList;

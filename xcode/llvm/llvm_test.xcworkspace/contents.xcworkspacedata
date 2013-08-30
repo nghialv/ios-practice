@@ -5,6 +5,9 @@
       location = "group:llvmOSX/../README.md">
    </FileRef>
    <FileRef
+      location = "group:llvmIOS/llvmIOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:llvmOSX/llvmOSX.xcodeproj">
    </FileRef>
 </Workspace>
