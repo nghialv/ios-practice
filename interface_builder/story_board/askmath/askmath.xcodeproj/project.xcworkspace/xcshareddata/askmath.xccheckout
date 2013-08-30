@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>61CA8E8C-FD2F-4F7B-80EB-F132A87FEADE</string>
+	<string>ADE256D9-86D6-45BB-98B6-08BAA37CE5E0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>testApp</string>
+	<string>askmath</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DB62D4C5-74AC-4795-99F7-0DAEC9EE4D4E</key>
 		<string>https://github.com/dennycd/ios-practice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>interface_builder/testApp/testApp.xcodeproj/project.xcworkspace</string>
+	<string>interface_builder/story_board/askmath/askmath.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DB62D4C5-74AC-4795-99F7-0DAEC9EE4D4E</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/dennycd/ios-practice.git</string>

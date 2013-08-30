@@ -21,6 +21,8 @@
 		3EF37AC217D1513800A67ADF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF37AA417D1513800A67ADF /* UIKit.framework */; };
 		3EF37ACA17D1513800A67ADF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EF37AC817D1513800A67ADF /* InfoPlist.strings */; };
 		3EF37ACC17D1513800A67ADF /* LocationTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF37ACB17D1513800A67ADF /* LocationTestAppTests.m */; };
+		3EF37AD617D1519400A67ADF /* Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF37AD517D1519400A67ADF /* Location.framework */; };
+		3EF37AD817D1525200A67ADF /* Location.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EF37AD717D1525200A67ADF /* Location.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3EF37AC717D1513800A67ADF /* LocationTestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationTestAppTests-Info.plist"; sourceTree = "<group>"; };
 		3EF37AC917D1513800A67ADF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EF37ACB17D1513800A67ADF /* LocationTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationTestAppTests.m; sourceTree = "<group>"; };
+		3EF37AD517D1519400A67ADF /* Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Location.framework; path = "../../../../Library/Developer/Xcode/DerivedData/sdk-euzowmhdvltqemelrqtvdloqztwq/Build/Products/Debug-iphoneos/Location.framework"; sourceTree = "<group>"; };
+		3EF37AD717D1525200A67ADF /* Location.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Location.bundle; path = "../../../../../Library/Developer/Xcode/DerivedData/sdk-euzowmhdvltqemelrqtvdloqztwq/Build/Products/Debug-iphoneos/Location.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF37AD617D1519400A67ADF /* Location.framework in Frameworks */,
 				3EF37AA317D1513800A67ADF /* CoreGraphics.framework in Frameworks */,
 				3EF37AA517D1513800A67ADF /* UIKit.framework in Frameworks */,
 				3EF37AA117D1513800A67ADF /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		3EF37A9F17D1513800A67ADF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EF37AD517D1519400A67ADF /* Location.framework */,
 				3EF37AA017D1513800A67ADF /* Foundation.framework */,
 				3EF37AA217D1513800A67ADF /* CoreGraphics.framework */,
 				3EF37AA417D1513800A67ADF /* UIKit.framework */,
@@ -112,6 +118,7 @@
 		3EF37AA617D1513800A67ADF /* LocationTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				3EF37AD717D1525200A67ADF /* Location.bundle */,
 				3EF37AAF17D1513800A67ADF /* ltAppDelegate.h */,
 				3EF37AB017D1513800A67ADF /* ltAppDelegate.m */,
 				3EF37AB217D1513800A67ADF /* Main.storyboard */,
@@ -229,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF37AD817D1525200A67ADF /* Location.bundle in Resources */,
 				3EF37AB917D1513800A67ADF /* Images.xcassets in Resources */,
 				3EF37AAB17D1513800A67ADF /* InfoPlist.strings in Resources */,
 				3EF37AB417D1513800A67ADF /* Main.storyboard in Resources */,
@@ -375,6 +383,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/sdk-euzowmhdvltqemelrqtvdloqztwq/Build/Products/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationTestApp/LocationTestApp-Prefix.pch";
 				INFOPLIST_FILE = "LocationTestApp/LocationTestApp-Info.plist";
@@ -388,6 +400,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/sdk-euzowmhdvltqemelrqtvdloqztwq/Build/Products/Debug-iphoneos",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LocationTestApp/LocationTestApp-Prefix.pch";
 				INFOPLIST_FILE = "LocationTestApp/LocationTestApp-Info.plist";

@@ -7,11 +7,36 @@
 //
 
 #import "ltAppDelegate.h"
+#import <Location/Location.h>
+#import <Location/TestPubObject.h>
+
 
 @implementation ltAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    TestPubObject *obj = [[TestPubObject alloc] init];
+    NSLog(@"test obj: %@", obj);
+    
+    
+    //test loading the bundle
+    NSBundle* frameworkBundle = nil;
+    NSString* mainBundlePath = [[NSBundle mainBundle] resourcePath];
+    NSString* frameworkBundlePath = [mainBundlePath stringByAppendingPathComponent:@"Location.bundle"];
+    
+    NSLog(@"loading bundle from path %@", frameworkBundlePath);
+    frameworkBundle = [NSBundle bundleWithPath:frameworkBundlePath];
+    
+    NSLog(@"loaded bundle %@", frameworkBundle);
+    
+    
+    //load a storyboard at runtime and use it to drive the app's interface
+    //when objects are loaded from the storyboard, they are restored to the state configured in the storyboard
+    UIStoryboard* testBoard = [UIStoryboard storyboardWithName:@"Main" bundle:frameworkBundle];
+    [self.window setRootViewController: [testBoard instantiateInitialViewController]];
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
