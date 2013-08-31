@@ -21,6 +21,7 @@
 		3EBCBDA017D15E500067A743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBCBD8217D15E500067A743 /* UIKit.framework */; };
 		3EBCBDA817D15E500067A743 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3EBCBDA617D15E500067A743 /* InfoPlist.strings */; };
 		3EBCBDAA17D15E500067A743 /* llvmIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCBDA917D15E500067A743 /* llvmIOSTests.m */; };
+		3EBCBDB517D164830067A743 /* itTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBCBDB417D164830067A743 /* itTestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		3EBCBDA517D15E500067A743 /* llvmIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "llvmIOSTests-Info.plist"; sourceTree = "<group>"; };
 		3EBCBDA717D15E500067A743 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EBCBDA917D15E500067A743 /* llvmIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = llvmIOSTests.m; sourceTree = "<group>"; };
+		3EBCBDB317D164830067A743 /* itTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itTestObject.h; sourceTree = "<group>"; };
+		3EBCBDB417D164830067A743 /* itTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itTestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				3EBCBD9017D15E500067A743 /* Main.storyboard */,
 				3EBCBD9317D15E500067A743 /* ltViewController.h */,
 				3EBCBD9417D15E500067A743 /* ltViewController.m */,
+				3EBCBDB317D164830067A743 /* itTestObject.h */,
+				3EBCBDB417D164830067A743 /* itTestObject.m */,
 				3EBCBD9617D15E500067A743 /* Images.xcassets */,
 				3EBCBD8517D15E500067A743 /* Supporting Files */,
 			);
@@ -200,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Denny C. Dai";
 				TargetAttributes = {
+					3EBCBD7A17D15E500067A743 = {
+						DevelopmentTeam = 4AAQUZMMPD;
+					};
 					3EBCBD9B17D15E500067A743 = {
 						TestTargetID = 3EBCBD7A17D15E500067A743;
 					};
@@ -251,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBCBD8F17D15E500067A743 /* ltAppDelegate.m in Sources */,
+				3EBCBDB517D164830067A743 /* itTestObject.m in Sources */,
 				3EBCBD9517D15E500067A743 /* ltViewController.m in Sources */,
 				3EBCBD8B17D15E500067A743 /* main.m in Sources */,
 			);
@@ -375,10 +384,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llvmIOS/llvmIOS-Prefix.pch";
 				INFOPLIST_FILE = "llvmIOS/llvmIOS-Info.plist";
+				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,10 +402,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "llvmIOS/llvmIOS-Prefix.pch";
 				INFOPLIST_FILE = "llvmIOS/llvmIOS-Info.plist";
+				LLVM_LTO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

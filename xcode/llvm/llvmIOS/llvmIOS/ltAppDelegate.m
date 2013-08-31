@@ -7,11 +7,14 @@
 //
 
 #import "ltAppDelegate.h"
+#import "itTestObject.h"
 
 @implementation ltAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    itTestObject * obj = [[itTestObject alloc] init];
+    
     // Override point for customization after application launch.
     return YES;
 }

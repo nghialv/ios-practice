@@ -13,4 +13,10 @@
  **/
 NS_ROOT_CLASS @interface itTestObject
 
+
+@end
+
+
+@interface itTestFullObject : NSObject
+
 @end
