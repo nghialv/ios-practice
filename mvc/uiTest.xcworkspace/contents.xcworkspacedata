@@ -22,7 +22,4 @@
    <FileRef
       location = "group:imageRender/imageRender.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:multiTasking/multiTasking.xcodeproj">
-   </FileRef>
 </Workspace>
