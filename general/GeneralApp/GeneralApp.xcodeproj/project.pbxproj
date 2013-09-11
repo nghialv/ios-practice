@@ -25,6 +25,7 @@
 		3E46754E1799F81F00FDA35D /* GAUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E46754D1799F81F00FDA35D /* GAUIApplication.m */; };
 		3E51510817A31A330086A077 /* GASecondaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E51510717A31A330086A077 /* GASecondaryViewController.m */; };
 		3E58ADB217A1FCAF0031883C /* GADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E58ADB117A1FCAF0031883C /* GADetailViewController.m */; };
+		3E92869D17E033D300BD7A9C /* GACapabilityCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF00C43179F30CB0072BF92 /* GACapabilityCheck.m */; };
 		3EE3ABE21799FD5F0066FECA /* GAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE11799FD5F0066FECA /* GAView.m */; };
 		3EE3ABE51799FD6F0066FECA /* GALayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE3ABE41799FD6F0066FECA /* GALayer.m */; };
 		3EE3ABE71799FD810066FECA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE3ABE61799FD810066FECA /* QuartzCore.framework */; };
@@ -374,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E92869D17E033D300BD7A9C /* GACapabilityCheck.m in Sources */,
 				3E4675431799F6D900FDA35D /* GeneralAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

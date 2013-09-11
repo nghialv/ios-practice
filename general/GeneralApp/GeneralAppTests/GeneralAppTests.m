@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "GACapabilityCheck.h"
 
 @interface GeneralAppTests : XCTestCase
 
@@ -28,9 +29,10 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testDeviceCapability
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    NSString* version = [GACapabilityCheck deviceSystemVersion];
+    NSLog(@"verison = %@", version);
 }
 
 @end

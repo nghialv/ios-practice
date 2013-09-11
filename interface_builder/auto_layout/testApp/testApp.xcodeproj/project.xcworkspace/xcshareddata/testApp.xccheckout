@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>25761D61-89E1-49B2-8231-48D381ACC21E</string>
+	<string>32E86ADB-D4AA-4E03-B2C7-2E3BA481C213</string>
 	<key>IDESourceControlProjectName</key>
-	<string>testApp1</string>
+	<string>testApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DB62D4C5-74AC-4795-99F7-0DAEC9EE4D4E</key>
 		<string>https://github.com/dennycd/ios-practice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>interface_builder/auto_layout/testApp1/testApp1.xcodeproj/project.xcworkspace</string>
+	<string>interface_builder/auto_layout/testApp/testApp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DB62D4C5-74AC-4795-99F7-0DAEC9EE4D4E</key>
