@@ -5,7 +5,6 @@
 * [Graphics & Animation Starting Point](https://developer.apple.com/library/prerelease/ios/referencelibrary/GettingStarted/GS_Graphics_iPhone/)
 * [Quartz 2D Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html)
 
-
 #### Core Animation Doc Ref
 
 * [Core Animation Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html)
@@ -13,9 +12,3 @@
 * [Animation Type and Timing Programming Guide](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Conceptual/Animation_Types_Timing/Introduction/Introduction.html)
 
 #### WWDC Reference
-
-
-* Best Practice for Core Animation  @ WWDC 2013
-* iOS App Performance: Graphics and Animations @ WWDC 2012
-* Optimizing 2D Graphics and Animation Performance @ WWDC 2012 
-*
