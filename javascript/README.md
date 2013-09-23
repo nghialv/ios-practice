@@ -14,5 +14,3 @@
 * [JavaScriptCoreHeadstart](https://developer.apple.com/library/mac/samplecode/JavaScriptCoreHeadstart/Introduction/Intro.html#//apple_ref/doc/uid/DTS10004553)
 * [JSInterpreter](https://developer.apple.com/library/mac/samplecode/JSInterpreter/Introduction/Intro.html#//apple_ref/doc/uid/DTS10004361)
 
-
-
